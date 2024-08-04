@@ -1,5 +1,6 @@
 import Data from "./Data";
 import Social from "./Social";
+import "./Home.css"
 
 const Home = () => {
   return (
@@ -35,7 +36,7 @@ const Home = () => {
             </svg>
           </div>
 
-          <Data/>
+          <Data />
         </div>
 
         <div
