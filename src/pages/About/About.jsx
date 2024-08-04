@@ -3,23 +3,23 @@ import "./About.css"
 
 const About = () => {
   return (
-    <section class="about section" id="about">
-      <h2 data-aos="zoom-in" data-aos-duration="3000" class="section_title">
+    <section className="about section" id="about">
+      <h2 data-aos="zoom-in" data-aos-duration="3000" className="section_title">
         | TENTANG SAYA |
       </h2>
-      <span class="section_subtitle"></span>
+      <span className="section_subtitle"></span>
 
-      <div class="about_container container grid">
+      <div className="about_container container grid">
         <img
           src="/me.png"
           alt=""
-          class="about_img"
+          className="about_img"
           data-aos="fade-right"
           data-aos-duration="3000"
         />
-        <div class="about_data">
+        <div className="about_data">
           <p
-            class="about_description"
+            className="about_description"
             data-aos="fade-right"
             data-aos-duration="2500"
           >
@@ -31,16 +31,16 @@ const About = () => {
             maupun suatu game 2D.
           </p>
 
-          <div class="about_buttons">
+          <div className="about_buttons">
             <a
               download=""
               href="/pdf/CV.pdf"
-              class="about_button button button--flex"
+              className="about_button button button--flex"
               data-aos="zoom-in"
               data-aos-duration="3000"
               id="down-cv"
             >
-              Download CV<i class="uil uil-download-alt button_icon"></i>
+              Download CV<i className="uil uil-download-alt button_icon"></i>
             </a>
           </div>
         </div>

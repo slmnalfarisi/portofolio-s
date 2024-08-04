@@ -1286,139 +1286,6 @@ img {
     color: var(--name-color);
 }
 
-/* SKILLS STARTS */
-.skills_container {
-    row-gap: 0;
-}
-
-.skills_header {
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--mb-2-5);
-    cursor: pointer;
-}
-
-.skills_icon,
-.skills_arrow {
-    font-size: 2rem;
-    color: var(--first-color);
-}
-
-.skills_icon {
-    margin-right: var(--mb-0-75);
-}
-
-.skills_title {
-    font-size: var(--h3-font-size);
-}
-
-.skills_subtitle {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-}
-
-.skills_arrow {
-    margin-left: auto;
-    transition: .4s;
-}
-
-
-.skills_titles {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--mb-0-5);
-}
-
-.skills_name {
-    font-size: 2rem;
-}
-
-.skills_list{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-    margin-top: 30px;
-    align-items: center;
-}
-
-.skill_card{
-    height: 220px;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 0.3rem 0.5rem var(--first-color);
-    border-radius: 8px;
-    transition: .6s;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-}
-
-.skill_card::after{
-    content: "";
-    position: absolute;
-    top: 150%;
-    left: -200px;
-    width: 120%;
-    transform: rotate(50deg);
-    background-color: var(--name-color);
-    height: 18px;
-    filter: blur(30px);
-    opacity: 0.5;
-    transition: 1s;
-}
-
-.skill_card:hover::after{
-    width: 325%;
-    top: -100%;
-}
-
-.skills_open .skill_card:hover{
-    background-color: transparent;
-    transform: translateY(-8px);
-    border-color: var(--first-color-second);
-}
-
-.icon_skill{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 4rem;
-    color: var(--first-color);
-}
-
-.icon_skill_svg{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-.skills_close .skills_list {
-    height: 0;
-    overflow: hidden;
-}
-
-.skills_open .skills_list {
-    height: max-content;
-    margin-bottom: var(--mb-2-5);
-}
-
-.skills_open .skills_arrow {
-    transform: rotate(-180deg);
-}
-
-.skills_list * {
-    transform: scale(0.5); 
-    transform-origin: center;
-}
-
-.skills_open .skills_list * {
-    transform: scale(1);
-}
-
-
-/* SKILLS ENDS */
-
 /* QUALIFICATION STARTS */
 .qualification_tabs {
     display: flex;
@@ -1778,11 +1645,6 @@ body.dark-theme {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
     }
-
-    .skills_title {
-        font-size: var(--normal-font-size);
-    }
-
     .qualification_data {
         gap: .5rem;
         
@@ -1804,32 +1666,6 @@ body.dark-theme {
         margin-right: 1rem;
         column-gap: 1rem;
     }
-
-    .skills_list{
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-    .skill_card{
-        height: 170px;
-    }
-    .skill_card::after {
-        top: 100%; 
-        left: -100%; 
-        width: 200%; 
-        height: 10px;
-        transition: 0.8s;
-    }
-
-    .skill_card:hover::after {
-        width: 300%; 
-        top: -50%;
-    }
-    .icon_skill_svg{
-        width: 70px;
-        height: 70px;
-        margin-bottom: 20px;
-    }
-
     .qualification_button {
         font-size: 1rem;
         font-weight: var(--font-medium);
@@ -1847,19 +1683,6 @@ body.dark-theme {
         display: inline-block;
         font-size: .8rem;
         margin-bottom: var(--mb-0-75);
-    }
-
-    .skill_card:hover {
-        transform: none; 
-        transform: translateY(-8px);
-        background-color: transparent; 
-        border-color: transparent; 
-    }
-    .icon_skill{
-        font-size: 4rem;
-    }
-    .skills_name{
-        font-size: 1.25rem;
     }
     
 }
@@ -1959,18 +1782,6 @@ body.dark-theme {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .skills_container {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 768px; 
-    }
-
-    .skills_name{
-        font-size: 1.5rem;
-    }
-}
-
 /* for large device */
 @media screen and (min-width: 1024px) {
 
@@ -1983,11 +1794,6 @@ body.dark-theme {
     .portofolio_container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-    .skills_container {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 768px; 
     }
 
     .qualification_sections {
