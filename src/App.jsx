@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import Skills from './Pages/Skills/Skills';
+import Qualification from './Pages/Qualification/Qualification';
 
 Aos.init({
   // mirror: false,
@@ -18,6 +19,7 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Qualification/>
     </main>
     </>
   )
