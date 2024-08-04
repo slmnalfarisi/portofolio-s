@@ -8,6 +8,7 @@ import Skills from './Pages/Skills/Skills';
 import Qualification from './Pages/Qualification/Qualification';
 import Project from './Pages/Project/Project';
 import Contact from './Pages/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 Aos.init({
   // mirror: false,
@@ -25,6 +26,7 @@ function App() {
       <Project/>
       <Contact/>
     </main>
+    <Footer/>
     </>
   )
 }
