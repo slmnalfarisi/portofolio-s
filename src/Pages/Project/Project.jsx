@@ -8,7 +8,7 @@ const Project = () => {
           | PROJECT |
         </h2>
 
-        <div className="portofolio_container container grid">
+        <div className="portofolio_container container">
           <div
             className="portofolio_card"
             data-aos="zoom-in"

@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'
 import Skills from './Pages/Skills/Skills';
 import Qualification from './Pages/Qualification/Qualification';
 import Project from './Pages/Project/Project';
+import Contact from './Pages/Contact/Contact';
 
 Aos.init({
   // mirror: false,
@@ -22,6 +23,7 @@ function App() {
       <Skills/>
       <Qualification/>
       <Project/>
+      <Contact/>
     </main>
     </>
   )
