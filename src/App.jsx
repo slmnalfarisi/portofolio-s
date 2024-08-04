@@ -1,6 +1,7 @@
 import './App.css';
-import Header from './components/Header/Header';
-import Home from './pages/Home/Home';
+import Header from './Components/Header/Header';
+import About from './Pages/About/About';
+import Home from './Pages/Home/Home';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
@@ -14,6 +15,7 @@ function App() {
     <Header/>
     <main className='main'>
       <Home/>
+      <About/>
     </main>
     </>
   )
