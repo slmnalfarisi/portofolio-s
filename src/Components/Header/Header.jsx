@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Header.css";
 import ScrollHeader from "../Models/ScrollHeader/ScrollHeader";
+import ThemeToggle from "../Models/ThemeToggle/ThemeToggle";
 
 export const Header = () => {
   ScrollHeader();
@@ -95,7 +96,7 @@ export const Header = () => {
 
         <div className="nav_btns">
           {/* GANTI TEMA BTN */}
-          <i className="uil uil-moon change-theme" id="theme-button"></i>
+          <ThemeToggle />
 
           <div className="nav_toggle" id="nav-toggle">
             <i className="uil uil-apps"></i>

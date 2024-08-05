@@ -11,6 +11,7 @@ import Contact from './Pages/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import ScrollActive from './Components/Models/ScrollActive/ScrollActive';
 import ScrollUp from './Components/Models/ScrollUp/ScrollUp';
+import ThemeToggle from './Components/Models/ThemeToggle/ThemeToggle';
 
 Aos.init({
   // mirror: false,
@@ -20,8 +21,10 @@ function App() {
   return(
     <>
     <Header/>
+
     <ScrollActive/>
     <ScrollUp/>
+    <ThemeToggle/>
 
     <main className='main'>
       <Home/>
@@ -31,6 +34,7 @@ function App() {
       <Project/>
       <Contact/>
     </main>
+    
     <Footer/>
     </>
   )
