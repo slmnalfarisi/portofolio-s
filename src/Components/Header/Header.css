@@ -18,6 +18,10 @@
     align-items: center;
 }
 
+.dark-theme .header{
+    background-color: var(--container-color);
+}
+
 .nav_logo,
 .nav_toggle {
     color: var(--title-color);
