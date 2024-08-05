@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import "./Header.css";
+import ScrollHeader from "../Models/ScrollHeader/ScrollHeader";
 
 export const Header = () => {
+  ScrollHeader();
   useEffect(() => {
     const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),

@@ -9,7 +9,8 @@ import Qualification from './Pages/Qualification/Qualification';
 import Project from './Pages/Project/Project';
 import Contact from './Pages/Contact/Contact';
 import Footer from './Components/Footer/Footer';
-import ScrollActive from './Components/ScrollActive/ScrollActive';
+import ScrollActive from './Components/Models/ScrollActive/ScrollActive';
+import ScrollUp from './Components/Models/ScrollUp/ScrollUp';
 
 Aos.init({
   // mirror: false,
@@ -20,7 +21,8 @@ function App() {
     <>
     <Header/>
     <ScrollActive/>
-    
+    <ScrollUp/>
+
     <main className='main'>
       <Home/>
       <About/>
