@@ -4,7 +4,7 @@ import "./Project.css"
 const Project = () => {
   return (
     <section className="portofolio section" id="portofolio">
-        <h2 className="section_title" data-aos="zoom-in" data-aos-duration="3000">
+        <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1400">
           | PROJECT |
         </h2>
 
@@ -12,7 +12,7 @@ const Project = () => {
           <div
             className="portofolio_card"
             data-aos="zoom-in"
-            data-aos-duration="3000"
+            data-aos-duration="1400"
           >
             <img
               src="/project/wafarii.webp"
@@ -45,7 +45,7 @@ const Project = () => {
           <div
             className="portofolio_card"
             data-aos="zoom-in"
-            data-aos-duration="3000"
+            data-aos-duration="1400"
           >
             <img src="/project/fotix.webp" alt="" className="portofolio_image" />
             <div className="portofolio_tools">
@@ -74,7 +74,7 @@ const Project = () => {
           <div
             className="portofolio_card"
             data-aos="zoom-in"
-            data-aos-duration="3000"
+            data-aos-duration="1400"
           >
             <img
               src="/project/rebellum.webp"
@@ -107,7 +107,7 @@ const Project = () => {
           <div
             className="portofolio_card"
             data-aos="zoom-in"
-            data-aos-duration="3000"
+            data-aos-duration="1400"
           >
             <img
               src="/project/verev.png"
@@ -139,7 +139,7 @@ const Project = () => {
           <div
             className="portofolio_card"
             data-aos="zoom-in"
-            data-aos-duration="3000"
+            data-aos-duration="1400"
           >
             <img
               src="/project/enheal.png"

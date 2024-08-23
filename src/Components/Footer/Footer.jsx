@@ -6,12 +6,12 @@ const Footer = () => {
     <footer class="footer">
       <div class="footer_bg">
         <div class="footer_container container grid">
-          <div data-aos="fade-right" data-aos-duration="2600">
+          <div>
             <h1 class="footer_title">Reynaldo</h1>
             <span class="footer_subtitle">Progammer</span>
           </div>
 
-          <ul class="footer_links" data-aos="zoom-in" data-aos-duration="2600">
+          <ul class="footer_links">
             <li>
               <a href="#skills" class="footer_link">Keahlian</a>
             </li>
@@ -25,8 +25,6 @@ const Footer = () => {
 
           <div
             class="footer_socials"
-            data-aos="fade-right"
-            data-aos-duration="2600"
           >
             <a
               href="https://www.instagram.com/rynldysllino"

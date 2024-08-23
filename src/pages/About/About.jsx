@@ -4,7 +4,7 @@ import "./About.css"
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 data-aos="zoom-in" data-aos-duration="3000" className="section_title">
+      <h2 data-aos="zoom-in" data-aos-duration="1300" className="section_title">
         | TENTANG SAYA |
       </h2>
       <span className="section_subtitle"></span>
@@ -15,13 +15,13 @@ const About = () => {
           alt=""
           className="about_img"
           data-aos="fade-right"
-          data-aos-duration="3000"
+          data-aos-duration="1300"
         />
         <div className="about_data">
           <p
             className="about_description"
             data-aos="fade-right"
-            data-aos-duration="2500"
+            data-aos-duration="1200"
           >
             Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya
             masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya
@@ -37,7 +37,7 @@ const About = () => {
               href="/pdf/CV.pdf"
               className="about_button button button--flex"
               data-aos="zoom-in"
-              data-aos-duration="3000"
+              data-aos-duration="1300"
               id="down-cv"
             >
               Download CV<i className="uil uil-download-alt button_icon"></i>

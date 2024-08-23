@@ -25,7 +25,7 @@ const Qualification = () => {
 
   return (
     <section className="qualification section" id="experience">
-      <h2 className="section_title" data-aos="zoom-in" data-aos-duration="3000">
+      <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1400">
         | PENGALAMAN |
       </h2>
       <span className="section_subtitle"></span>
@@ -33,7 +33,7 @@ const Qualification = () => {
       <div
         className="qualification_container container"
         data-aos="zoom-in"
-        data-aos-duration="3000"
+        data-aos-duration="1500"
       >
         <div className="qualification_tabs">
           <div

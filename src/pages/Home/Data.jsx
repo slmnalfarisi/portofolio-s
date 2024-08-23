@@ -3,23 +3,23 @@ import React from "react";
 const Data = () => {
   return (
     <div className="home_data">
-      <h3 className="home_about" data-aos="fade-right" data-aos-duration="2000">
+      <h3 className="home_about" data-aos="fade-right" data-aos-duration="1000">
         Hallo, Nama saya
       </h3>
-      <h1 className="home_title" data-aos="fade-right" data-aos-duration="2300">
+      <h1 className="home_title" data-aos="fade-right" data-aos-duration="1200">
         Reynaldo Yusellino
       </h1>
       <h3
         className="home_subtitle animated-text"
         data-aos="fade-right"
-        data-aos-duration="2500"
+        data-aos-duration="1300"
       >
         <span></span>
       </h3>
       <p
         className="home_description"
         data-aos="fade-right"
-        data-aos-duration="2800"
+        data-aos-duration="1400"
       >
         Saya merupakan seseorang yang suka mempelajari bahasa Pemrograman
         khususnya untuk pengembangan website, dan game. Selain itu saya juga
@@ -29,7 +29,7 @@ const Data = () => {
         href="#contact"
         className="button button--flex"
         data-aos="zoom-in-right"
-        data-aos-duration="3000"
+        data-aos-duration="1450"
       >
         Hubungi Saya<i className="uil uil-message button_icon"></i>
       </a>
