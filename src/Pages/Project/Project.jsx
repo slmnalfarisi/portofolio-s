@@ -115,7 +115,7 @@ const Project = () => {
               className="portofolio_image"
             />
             <div className="portofolio_tools">
-              <span className="tool">TypeScript</span>
+              <span className="tool">JavaScript</span>
               <span className="tool">Three JS</span>
               <span className="tool">React</span>
             </div>
