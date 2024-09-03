@@ -166,8 +166,10 @@ const Qualification = () => {
             </div>
             <div className="qualification_data">
               <div></div>
+              
               <div>
                 <span className="qualification_rounder"></span>
+                <span className="qualification_line"></span>
               </div>
               <div>
                 <h3 className="qualification_title">
@@ -180,6 +182,24 @@ const Qualification = () => {
                 </div>
               </div>
             </div>
+            <div className="qualification_data">
+              <div>
+                <h3 className="qualification_title">
+                  T8NOFEST (Teknologi dan Soundsystem) - Web Design
+                </h3>
+                <span className="qualification_subtitle">
+                  Juara 2 
+                </span>
+                <div className="qualification_calendar">
+                  <i className="uil uil-calendar-alt"></i>
+                  2024
+                </div>
+              </div>
+              <div>
+                <span className="qualification_rounder"></span>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
