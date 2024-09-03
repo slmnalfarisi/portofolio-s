@@ -23,21 +23,57 @@ const Skills = () => {
             >
               <div className="skill_card">
                 <div className="icon_skill_svg">
-                  <img src="/skills/css-3-svgrepo-com.svg" alt="" />
+                  <img src="/skills/css.svg" alt="" />
                 </div>
                 <h3 className="skills_name">CSS</h3>
               </div>
               <div className="skill_card">
                 <div className="icon_skill_svg">
-                  <img src="/skills/css-3-svgrepo-com.svg" alt="" />
+                  <img src="/skills/javascript.svg" alt="" />
                 </div>
-                <h3 className="skills_name">CSS</h3>
+                <h3 className="skills_name">JavaScript</h3>
               </div>
               <div className="skill_card">
                 <div className="icon_skill_svg">
-                  <img src="/skills/css-3-svgrepo-com.svg" alt="" />
+                  <img src="/skills/typscript.svg" alt="" />
                 </div>
-                <h3 className="skills_name">CSS</h3>
+                <h3 className="skills_name">TypeScript</h3>
+              </div>
+              <div className="skill_card">
+                <div className="icon_skill_svg">
+                  <img src="/skills/threejs.svg" alt="" />
+                </div>
+                <h3 className="skills_name">Three JS</h3>
+              </div>
+              <div className="skill_card">
+                <div className="icon_skill_svg">
+                  <img src="/skills/react.svg" alt="" />
+                </div>
+                <h3 className="skills_name">React</h3>
+              </div>
+              <div className="skill_card">
+                <div className="icon_skill_svg">
+                  <img src="/skills/tailwind.svg" alt="" />
+                </div>
+                <h3 className="skills_name">Tailwind</h3>
+              </div>
+              <div className="skill_card">
+                <div className="icon_skill_svg">
+                  <img src="/skills/php.svg" alt="" />
+                </div>
+                <h3 className="skills_name">PHP</h3>
+              </div>
+              <div className="skill_card">
+                <div className="icon_skill_svg">
+                  <img src="/skills/python.svg" alt="" />
+                </div>
+                <h3 className="skills_name">Python</h3>
+              </div>
+              <div className="skill_card">
+                <div className="icon_skill_svg">
+                  <img src="/skills/django.svg" alt="" />
+                </div>
+                <h3 className="skills_name">Django</h3>
               </div>
               
             </div>
