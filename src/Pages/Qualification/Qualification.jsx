@@ -116,7 +116,7 @@ const Qualification = () => {
             <div className="qualification_data">
               <div>
                 <h3 className="qualification_title">
-                  Cloud Computing Club Competition ~ Website Statis
+                  Cloud Computing Club Competition ~ Website Design
                 </h3>
                 <span className="qualification_subtitle">Peserta</span>
                 <div className="qualification_calendar">
@@ -149,7 +149,7 @@ const Qualification = () => {
             <div className="qualification_data">
               <div>
                 <h3 className="qualification_title">
-                  Cloud Computing Club Competition ~ Website Statis
+                  Cloud Computing Club Competition ~ Website Design
                 </h3>
                 <span className="qualification_subtitle">
                   Juara 2 & Best Desain
@@ -197,9 +197,27 @@ const Qualification = () => {
               </div>
               <div>
                 <span className="qualification_rounder"></span>
+                <span className="qualification_line"></span>
               </div>
             </div>
-            
+            <div className="qualification_data">
+              <div></div>
+              
+              <div>
+                <span className="qualification_rounder"></span>
+                
+              </div>
+              <div>
+                <h3 className="qualification_title">
+                GSS Micro Influencer Competitions - Web Design
+                </h3>
+                <span className="qualification_subtitle">Juara Harapan I</span>
+                <div className="qualification_calendar">
+                  <i className="uil uil-calendar-alt"></i>
+                  2024
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
