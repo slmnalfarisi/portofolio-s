@@ -8,7 +8,7 @@ const Home = () => {
       <div className="home_container container grid">
         <div className="home_content grid">
           <Social />
-          <div className="home_img" data-aos="zoom-in" data-aos-duration="2700">
+          <div className="home_img" data-aos="zoom-in" data-aos-duration="1200">
             <svg
               className="home_blob"
               viewBox="0 0 200 187"
@@ -39,17 +39,17 @@ const Home = () => {
           <Data />
         </div>
 
-        <div
+        {/* <div
           className="home_scroll"
           data-aos="fade-right"
-          data-aos-duration="3000"
+          data-aos-duration="1300"
         >
           <a href="#about" className="home_scroll-button button--flex">
             <i className="uil uil-mouse-alt home_scroll-mouse"></i>
             <span className="home_scroll-name">Menu Selanjutnya</span>
             <i className="uil uil-arrow-down home-scroll-arrow"></i>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
