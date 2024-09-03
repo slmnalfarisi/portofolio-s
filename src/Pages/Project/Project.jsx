@@ -82,9 +82,9 @@ const Project = () => {
               className="portofolio_image"
             />
             <div className="portofolio_tools">
-              <span className="tool">Tailwind</span>
+              <span className="tool">TypeScript</span>
               <span className="tool">Three JS</span>
-              <span className="tool">JavaScript</span>
+              <span className="tool">React</span>
             </div>
             <h3 className="portofolio_title">Rebellum</h3>
             <p className="portofolio_subtitle">
@@ -97,7 +97,39 @@ const Project = () => {
                   Demo <i className="uil uil-arrow-right portfolio_icon"></i>
                 </div>
               </a>
-              <a href="https://github.com/reynaldo0/Rebellum">
+              <a href="https://github.com/reynaldo0/rebellum-v2">
+                <div className="portofolio_button button">
+                  Source Code <i className="uil uil-arrow-right portfolio_icon"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            className="portofolio_card"
+            data-aos="zoom-in"
+            data-aos-duration="1400"
+          >
+            <img
+              src="/project/healthyself.webp"
+              alt=""
+              className="portofolio_image"
+            />
+            <div className="portofolio_tools">
+              <span className="tool">TypeScript</span>
+              <span className="tool">Three JS</span>
+              <span className="tool">React</span>
+            </div>
+            <h3 className="portofolio_title">HealThyself</h3>
+            <p className="portofolio_subtitle">
+              Healthyself adalah sebuah website yang memberikan informasi terkait kesehatan manusia dari Bayi hingga Lansia
+            </p>
+            <div className="portofolio_buttons">
+              <a href="https://healthyself.vercel.app/">
+                <div className="portofolio_button button">
+                  Demo <i className="uil uil-arrow-right portfolio_icon"></i>
+                </div>
+              </a>
+              <a href="https://github.com/reynaldo0/HealThyself">
                 <div className="portofolio_button button">
                   Source Code <i className="uil uil-arrow-right portfolio_icon"></i>
                 </div>
