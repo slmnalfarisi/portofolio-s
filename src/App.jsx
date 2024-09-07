@@ -14,7 +14,7 @@ import ScrollActive from './components/Models/ScrollActive/ScrollActive';
 import ScrollUp from './components/Models/ScrollUp/ScrollUp';
 
 Aos.init({
-  // mirror: false,
+  
 })
 
 function App() {
