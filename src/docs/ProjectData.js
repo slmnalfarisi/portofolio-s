@@ -1,4 +1,3 @@
-// src/data/projectData.js
 const projectData = [
   {
     title: "Wafari",

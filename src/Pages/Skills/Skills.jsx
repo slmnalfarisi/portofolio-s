@@ -1,5 +1,6 @@
 import React from "react";
-import "./Skills.css"
+import "./Skills.css";
+import skillsData from "../../docs/SkillsData";
 
 const Skills = () => {
   return (
@@ -16,66 +17,15 @@ const Skills = () => {
       >
         <div>
           <div className="skills_content">
-            <div
-              className="skills_list grid"
-              data-aos="zoom-in"
-              data-aos-duration="1500"
-            >
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/css.svg" alt="" />
+            <div className="skills_list grid"  data-aos="zoom-in" data-aos-duration="1200">
+              {skillsData.map((skill, index) => (
+                <div className="skill_card" key={index}>
+                  <div className="icon_skill_svg">
+                    <img src={skill.icon} alt={skill.name} />
+                  </div>
+                  <h3 className="skills_name">{skill.name}</h3>
                 </div>
-                <h3 className="skills_name">CSS</h3>
-              </div>
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/javascript.svg" alt="" />
-                </div>
-                <h3 className="skills_name">JavaScript</h3>
-              </div>
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/typscript.svg" alt="" />
-                </div>
-                <h3 className="skills_name">TypeScript</h3>
-              </div>
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/threejs.svg" alt="" />
-                </div>
-                <h3 className="skills_name">Three JS</h3>
-              </div>
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/react.svg" alt="" />
-                </div>
-                <h3 className="skills_name">React</h3>
-              </div>
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/tailwind.svg" alt="" />
-                </div>
-                <h3 className="skills_name">Tailwind</h3>
-              </div>
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/php.svg" alt="" />
-                </div>
-                <h3 className="skills_name">PHP</h3>
-              </div>
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/python.svg" alt="" />
-                </div>
-                <h3 className="skills_name">Python</h3>
-              </div>
-              <div className="skill_card">
-                <div className="icon_skill_svg">
-                  <img src="/skills/django.svg" alt="" />
-                </div>
-                <h3 className="skills_name">Django</h3>
-              </div>
-              
+              ))}
             </div>
           </div>
         </div>
