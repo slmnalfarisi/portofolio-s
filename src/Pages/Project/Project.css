@@ -76,6 +76,7 @@
   font-weight: var(--font-medium);
   margin-top: 10px;
   border: none;
+  cursor: pointer;
 }
 
 .load_more_button:hover {
