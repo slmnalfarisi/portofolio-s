@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 import "./Contact.css";
 
 const Contact = () => {
@@ -10,22 +11,32 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_0i9jv5v", // Service ID Anda
-        "template_zd1uksf", // Template ID Anda
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        "HRvurviYuQQUlApJm" // API Key Anda
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
-          alert("Pesan berhasil dikirim!");
+          Swal.fire({
+            icon: "success",
+            title: "Pesan Terkirim!",
+            text: "Pesan Anda berhasil dikirim.",
+            confirmButtonText: "OK",
+          });
         },
         (error) => {
           console.log(error.text);
-          alert("Terjadi kesalahan, pesan gagal dikirim.");
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Terjadi kesalahan, pesan gagal dikirim.",
+            confirmButtonText: "Coba Lagi",
+          });
         }
       );
-    e.target.reset(); // Reset form setelah pengiriman
+    e.target.reset();
   };
 
   return (
