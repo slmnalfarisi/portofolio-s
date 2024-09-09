@@ -1,13 +1,70 @@
-import Data from "./Data";
-import Social from "./Social";
-import "./Home.css"
+import React, { useEffect, useRef } from "react";
+import Typed from "typed.js";
+import "./Home.css";
 
 const Home = () => {
+  const typedElement = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        "Programmer",
+        "Web Developer",
+        "Cyber Security Enthusiast",
+        "Game Developer",
+        "Fullstack Developer",
+      ],
+      typeSpeed: 70,
+      backSpeed: 30,
+      loop: true,
+    };
+
+    const typed = new Typed(typedElement.current, options);
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section className="home section" id="home">
       <div className="home_container container grid">
         <div className="home_content grid">
-          <Social />
+          {/* Social Media Links */}
+          <div className="home_social">
+            <a
+              href="https://www.linkedin.com/in/reynaldo-yusellino-564724270"
+              target="_blank"
+              className="home_social-icon"
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+              rel="noreferrer"
+            >
+              <i className="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/rynldysllino"
+              target="_blank"
+              className="home_social-icon"
+              data-aos="zoom-in"
+              data-aos-duration="1200"
+              rel="noreferrer"
+            >
+              <i className="uil uil-instagram"></i>
+            </a>
+            <a
+              href="https://github.com/reynaldo0"
+              target="_blank"
+              className="home_social-icon"
+              data-aos="zoom-in"
+              data-aos-duration="1300"
+              rel="noreferrer"
+            >
+              <i className="uil uil-github-alt"></i>
+            </a>
+          </div>
+
+          {/* Profile Image */}
           <div className="home_img" data-aos="zoom-in" data-aos-duration="1200">
             <svg
               className="home_blob"
@@ -36,20 +93,48 @@ const Home = () => {
             </svg>
           </div>
 
-          <Data />
+          {/* Profile Data */}
+          <div className="home_data">
+            <h3
+              className="home_about"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              Hallo, Nama saya
+            </h3>
+            <h1
+              className="home_title"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
+              Reynaldo Yusellino
+            </h1>
+            <h3
+              className="home_subtitle"
+              data-aos="fade-right"
+              data-aos-duration="1300"
+            >
+              <span ref={typedElement}></span>
+            </h3>
+            <p
+              className="home_description"
+              data-aos="fade-right"
+              data-aos-duration="1400"
+            >
+              Saya merupakan seseorang yang suka mempelajari bahasa Pemrograman
+              khususnya untuk pengembangan website, dan game. Selain itu saya
+              juga antusias terhadap keamanan siber terhadap website.
+            </p>
+            <a
+              href="#contact"
+              className="button button--flex"
+              data-aos="zoom-in-right"
+              data-aos-duration="1450"
+            >
+              Hubungi Saya<i className="uil uil-message button_icon"></i>
+            </a>
+          </div>
         </div>
-
-        {/* <div
-          className="home_scroll"
-          data-aos="fade-right"
-          data-aos-duration="1300"
-        >
-          <a href="#about" className="home_scroll-button button--flex">
-            <i className="uil uil-mouse-alt home_scroll-mouse"></i>
-            <span className="home_scroll-name">Menu Selanjutnya</span>
-            <i className="uil uil-arrow-down home-scroll-arrow"></i>
-          </a>
-        </div> */}
       </div>
     </section>
   );
