@@ -1,19 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "./Home.css";
+import { homeData } from "../../docs/HomeData";
 
 const Home = () => {
   const typedElement = useRef(null);
 
   useEffect(() => {
     const options = {
-      strings: [
-        "Programmer",
-        "Web Developer",
-        "Cyber Security Enthusiast",
-        "Game Developer",
-        "Fullstack Developer",
-      ],
+      strings: homeData.profileData.subtitle,
       typeSpeed: 70,
       backSpeed: 30,
       loop: true,
@@ -32,36 +27,19 @@ const Home = () => {
         <div className="home_content grid">
           {/* Social Media Links */}
           <div className="home_social">
-            <a
-              href="https://www.linkedin.com/in/reynaldo-yusellino-564724270"
-              target="_blank"
-              className="home_social-icon"
-              data-aos="zoom-in"
-              data-aos-duration="1100"
-              rel="noreferrer"
-            >
-              <i className="uil uil-linkedin-alt"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/rynldysllino"
-              target="_blank"
-              className="home_social-icon"
-              data-aos="zoom-in"
-              data-aos-duration="1200"
-              rel="noreferrer"
-            >
-              <i className="uil uil-instagram"></i>
-            </a>
-            <a
-              href="https://github.com/reynaldo0"
-              target="_blank"
-              className="home_social-icon"
-              data-aos="zoom-in"
-              data-aos-duration="1300"
-              rel="noreferrer"
-            >
-              <i className="uil uil-github-alt"></i>
-            </a>
+            {homeData.socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                target="_blank"
+                className="home_social-icon"
+                data-aos="zoom-in"
+                data-aos-duration={link.duration}
+                rel="noreferrer"
+              >
+                <i className={link.iconClass}></i>
+              </a>
+            ))}
           </div>
 
           {/* Profile Image */}
@@ -100,14 +78,14 @@ const Home = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              Hallo, Nama saya
+              {homeData.profileData.about}
             </h3>
             <h1
               className="home_title"
               data-aos="fade-right"
               data-aos-duration="1200"
             >
-              Reynaldo Yusellino
+              {homeData.profileData.title}
             </h1>
             <h3
               className="home_subtitle"
@@ -121,12 +99,10 @@ const Home = () => {
               data-aos="fade-right"
               data-aos-duration="1400"
             >
-              Saya merupakan seseorang yang suka mempelajari bahasa Pemrograman
-              khususnya untuk pengembangan website, dan game. Selain itu saya
-              juga antusias terhadap keamanan siber terhadap website.
+              {homeData.profileData.description}
             </p>
             <a
-              href="#contact"
+              href={homeData.profileData.contactLink}
               className="button button--flex"
               data-aos="zoom-in-right"
               data-aos-duration="1450"
