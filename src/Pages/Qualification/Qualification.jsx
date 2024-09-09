@@ -4,21 +4,40 @@ import { qualificationData } from "../../docs/QualificationData";
 
 const Qualification = () => {
   const [activeTab, setActiveTab] = useState("#education");
+  const [isFirstRender, setIsFirstRender] = useState(true);
 
   useEffect(() => {
     const contents = document.querySelectorAll(".qualification_content");
+
     contents.forEach((content) => {
       if (content.id === activeTab.slice(1)) {
-        content.style.display = "block";
-        setTimeout(() => {
+        if (isFirstRender) {
+          content.style.display = "block";
           content.classList.add("qualification_active");
-        }, 50);
+        } else {
+          content.classList.remove("qualification_zoom-out");
+          setTimeout(() => {
+            content.style.display = "block";
+            setTimeout(() => {
+              content.classList.add("qualification_active");
+            }, 50);
+          }, 400);
+        }
       } else {
-        content.style.display = "none";
         content.classList.remove("qualification_active");
+        if (!isFirstRender) {
+          content.classList.add("qualification_zoom-out");
+          setTimeout(() => {
+            content.style.display = "none";
+          }, 400); 
+        } else {
+          content.style.display = "none";
+        }
       }
     });
-  }, [activeTab]);
+
+    setIsFirstRender(false);
+  }, [activeTab, isFirstRender]);
 
   const handleTabClick = (target) => {
     setActiveTab(target);
@@ -27,7 +46,6 @@ const Qualification = () => {
   const renderQualificationData = (data) => {
     return data.map((item, index) => (
       <div className="qualification_data" key={index}>
-        {/* Jika index ganjil, tampilkan data di kiri */}
         {index % 2 === 0 ? (
           <>
             <div>
@@ -42,11 +60,11 @@ const Qualification = () => {
               <span className="qualification_rounder"></span>
               {index !== data.length - 1 && <span className="qualification_line"></span>}
             </div>
-            <div></div> {/* Kosongkan kolom kanan */}
+            <div></div>
           </>
         ) : (
           <>
-            <div></div> {/* Kosongkan kolom kiri */}
+            <div></div>
             <div>
               <span className="qualification_rounder"></span>
               {index !== data.length - 1 && <span className="qualification_line"></span>}

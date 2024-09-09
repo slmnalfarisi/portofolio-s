@@ -1,148 +1,165 @@
 .qualification_tabs {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: var(--mb-0-5);
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-0-5);
 }
 
-.section_title{
-    padding-bottom: 50px;
+.section_title {
+  padding-bottom: 50px;
 }
 
 .qualification_button {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    cursor: pointer;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
 }
 
 .qualification_button:hover {
-    color: var(--first-color);
+  color: var(--first-color);
 }
 
 .qualification_icon {
-    font-size: 1.8rem;
-    margin-right: var(--mb-0-25);
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
 }
-.qualification_tr{
-    display: inline-block;
-    font-size: 1rem;
-    margin-bottom: var(--mb-0-75);
+.qualification_tr {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: var(--mb-0-75);
 }
 
 .qualification_data {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    column-gap: 1.5rem;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
 }
 
 .qualification_title {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
 }
 
 .qualification_subtitle {
-    display: inline-block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-1);
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
 }
 
 .qualification_calendar {
-    font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
 }
 
-.qualification_calendar i{
-    margin-right: 0.4rem;
+.qualification_calendar i {
+  margin-right: 0.4rem;
 }
 
 .qualification_rounder {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: var(--first-color);
-    border-radius: 50%;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: var(--first-color);
+  border-radius: 50%;
 }
 
 .qualification_line {
-    display: block;
-    width: 1px;
-    height: 100%;
-    background-color: var(--first-color);
-    transform: translate(6px, -4px);
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -4px);
 }
 
 .qualification [data-content] {
-    display: none;
-    transform: scale(0.7);
-    transform-origin: center;
-    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
-    display: none;
+  display: none;
+  transform: scale(0.7);
+  transform-origin: center;
+  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out;
+  display: none;
 }
 
 .qualification_active[data-content] {
-    display: block;
-    opacity: 1;
-    transform: scale(1);
+  display: block;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .qualification_button.qualification_active {
-    color: var(--first-color);
+  color: var(--first-color);
+}
+
+.qualification_content {
+  display: none;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.qualification_active {
+  display: block;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.qualification_zoom-out {
+  display: block;
+  transform: scale(0.7);
+  opacity: 0;
 }
 
 @media screen and (max-width: 350px) {
-    .qualification_data {
-        gap: .5rem;
-        
-    }
+  .qualification_data {
+    gap: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .qualification_button {
-        font-size: 1rem;
-        font-weight: var(--font-medium);
-        cursor: pointer;
-    }
+  .qualification_button {
+    font-size: 1rem;
+    font-weight: var(--font-medium);
+    cursor: pointer;
+  }
 
-    .qualification_tabs{
-        gap: 10px;
-
-    }
-    .qualification_icon{
-        font-size: 1rem;
-    }
-    .qualification_tr{
-        display: inline-block;
-        font-size: .8rem;
-        margin-bottom: var(--mb-0-75);
-    }
+  .qualification_tabs {
+    gap: 10px;
+  }
+  .qualification_icon {
+    font-size: 1rem;
+  }
+  .qualification_tr {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-bottom: var(--mb-0-75);
+  }
 }
 
 @media screen and (min-width: 568px) {
-    .qualification_sections {
-        display: grid;
-        grid-template-columns: .6fr;
-        justify-content: center;
-    }
+  .qualification_sections {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .qualification_tabs {
-        justify-content: center;
-    }
-    
-    .qualification_button {
-        margin: 0 var(--mb-1);
-        margin-bottom: 30px;
-    }
+  .qualification_tabs {
+    justify-content: center;
+  }
 
-    .qualification_sections {
-        grid-template-columns: .5fr;
-    }
+  .qualification_button {
+    margin: 0 var(--mb-1);
+    margin-bottom: 30px;
+  }
+
+  .qualification_sections {
+    grid-template-columns: 0.5fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .qualification_sections {
-        grid-template-columns: .8fr;
-        justify-content: center;
-    }
+  .qualification_sections {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
 }
