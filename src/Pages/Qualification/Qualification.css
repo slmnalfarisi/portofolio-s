@@ -4,6 +4,10 @@
     margin-bottom: var(--mb-0-5);
 }
 
+.section_title{
+    padding-bottom: 50px;
+}
+
 .qualification_button {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
@@ -47,10 +51,14 @@
     color: var(--text-color-light);
 }
 
+.qualification_calendar i{
+    margin-right: 0.4rem;
+}
+
 .qualification_rounder {
     display: inline-block;
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     background-color: var(--first-color);
     border-radius: 50%;
 }
@@ -60,7 +68,7 @@
     width: 1px;
     height: 100%;
     background-color: var(--first-color);
-    transform: translate(6px, -7px);
+    transform: translate(6px, -4px);
 }
 
 .qualification [data-content] {
