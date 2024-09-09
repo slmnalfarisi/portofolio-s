@@ -1,5 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import Aos from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 import About from './Pages/About/About';
 import Home from './Pages/Home/Home';
@@ -14,29 +15,29 @@ import ScrollActive from './components/Models/ScrollActive/ScrollActive';
 import ScrollUp from './components/Models/ScrollUp/ScrollUp';
 
 Aos.init({
-  
-})
+  // Add your AOS options here if needed
+});
 
 function App() {
-  return(
+  return (
     <>
-    <Header/>
+      <Header />
 
-    <ScrollActive/>
-    <ScrollUp/>
+      <ScrollActive />
+      <ScrollUp />
 
-    <main className='main'>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Qualification/>
-      <Project/>
-      <Contact/>
-    </main>
-    
-    <Footer/>
+      <main className="main">
+        <Home />
+        <About />
+        <Skills />
+        <Qualification />
+        <Project />
+        <Contact />
+      </main>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

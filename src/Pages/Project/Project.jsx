@@ -37,11 +37,14 @@ const Project = () => {
                   Demo <i className="uil uil-arrow-right portfolio_icon"></i>
                 </div>
               </a>
-              <a href={project.sourceLink}>
-                <div className="portofolio_button button">
-                  Source Code <i className="uil uil-arrow-right portfolio_icon"></i>
-                </div>
-              </a>
+              {/* Sembunyikan tombol Source Code jika tools mengandung 'WordPress' */}
+              {!project.tools.includes('WordPress') && (
+                <a href={project.sourceLink}>
+                  <div className="portofolio_button button">
+                    Source Code <i className="uil uil-arrow-right portfolio_icon"></i>
+                  </div>
+                </a>
+              )}
             </div>
           </div>
         ))}
