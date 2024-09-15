@@ -1,12 +1,35 @@
 import React, { useState } from 'react';
-import "./Project.css";
+import './Project.css';
 import projectData from '../../docs/ProjectData';
 
 const Project = () => {
   const [visibleProjects, setVisibleProjects] = useState(4);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [zoomOut, setZoomOut] = useState(false); // Track zoom-out state
+  const [isModalOpen, setIsModalOpen] = useState(false); // Track modal open state
 
   const loadMoreProjects = () => {
-    setVisibleProjects(prevVisible => prevVisible + 3); 
+    setVisibleProjects((prevVisible) => prevVisible + 3);
+  };
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsModalOpen(true);  // Open the modal
+    setZoomOut(false);     // Reset zoom-out state
+  };
+
+  const closeModal = () => {
+    setZoomOut(true); // Trigger zoom-out animation
+    setTimeout(() => {
+      setIsModalOpen(false); // Close the modal after the zoom-out animation
+    }, 500); // Wait for the zoom-out animation to complete
+  };
+
+  const handleModalClick = (e) => {
+    // Close modal if click is outside the image content
+    if (e.target.classList.contains('modal')) {
+      closeModal();
+    }
   };
 
   return (
@@ -22,6 +45,7 @@ const Project = () => {
             className="portofolio_card"
             data-aos="zoom-in"
             data-aos-duration="1400"
+            onClick={() => openModal(project.image)}
           >
             <img src={project.image} alt={project.title} className="portofolio_image" />
             <div className="portofolio_tools">
@@ -37,7 +61,6 @@ const Project = () => {
                   Demo <i className="uil uil-arrow-right portfolio_icon"></i>
                 </div>
               </a>
-              {/* Sembunyikan tombol Source Code jika tools mengandung 'WordPress' */}
               {!project.tools.includes('WordPress') && (
                 <a href={project.sourceLink}>
                   <div className="portofolio_button button">
@@ -52,9 +75,21 @@ const Project = () => {
 
       {visibleProjects < projectData.length && (
         <div className="load_more_container">
-          <button onClick={loadMoreProjects} className="load_more_button ">
+          <button onClick={loadMoreProjects} className="load_more_button">
             Load More
           </button>
+        </div>
+      )}
+
+      {/* Modal Section */}
+      {isModalOpen && (
+        <div className="modal" onClick={handleModalClick}>
+          <span className="close" onClick={closeModal}>&times;</span>
+          <img
+            src={selectedImage}
+            alt="Zoomed Project"
+            className={`modal_content ${zoomOut ? 'zoom-out' : 'zoom-in'}`}
+          />
         </div>
       )}
     </section>

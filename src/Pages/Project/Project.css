@@ -17,7 +17,7 @@
   margin-bottom: 0.75rem;
   max-width: 100%;
   width: 100%;
-  height: 200px;
+  height: 190px;
 }
 
 .portofolio_image:hover {
@@ -82,6 +82,94 @@
 .load_more_button:hover {
   background-color: var(--first-color-alt);
 }
+
+/* Animasi zoom-out */
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+/* Animasi zoom-in */
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Modal (background) */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content (image) with zoom-in animation */
+.modal_content.zoom-in {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0.3rem 0.5rem var(--first-color);
+  animation: zoomIn 0.5s ease-in-out; /* Zoom-in animation */
+}
+
+/* Modal Content with zoom-out animation */
+.modal_content.zoom-out {
+  animation: zoomOut 0.5s ease-in-out; /* Zoom-out animation */
+}
+
+/* Fade-in animation for the modal background */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .modal_content {
+    max-width: 100%;
+    max-height: 80%; /* Adjust height for smaller screens */
+  }
+}
+
 
 @media screen and (max-width: 767px) {
   .portofolio_container {
