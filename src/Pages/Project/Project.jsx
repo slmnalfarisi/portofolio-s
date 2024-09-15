@@ -5,8 +5,8 @@ import projectData from '../../docs/ProjectData';
 const Project = () => {
   const [visibleProjects, setVisibleProjects] = useState(4);
   const [selectedImage, setSelectedImage] = useState(null);
-  const [zoomOut, setZoomOut] = useState(false); // Track zoom-out state
-  const [isModalOpen, setIsModalOpen] = useState(false); // Track modal open state
+  const [zoomOut, setZoomOut] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); 
 
   const loadMoreProjects = () => {
     setVisibleProjects((prevVisible) => prevVisible + 3);
@@ -14,19 +14,18 @@ const Project = () => {
 
   const openModal = (image) => {
     setSelectedImage(image);
-    setIsModalOpen(true);  // Open the modal
-    setZoomOut(false);     // Reset zoom-out state
+    setIsModalOpen(true);  
+    setZoomOut(false);
   };
 
   const closeModal = () => {
-    setZoomOut(true); // Trigger zoom-out animation
+    setZoomOut(true);
     setTimeout(() => {
-      setIsModalOpen(false); // Close the modal after the zoom-out animation
-    }, 500); // Wait for the zoom-out animation to complete
+      setIsModalOpen(false);
+    }, 500); 
   };
 
   const handleModalClick = (e) => {
-    // Close modal if click is outside the image content
     if (e.target.classList.contains('modal')) {
       closeModal();
     }

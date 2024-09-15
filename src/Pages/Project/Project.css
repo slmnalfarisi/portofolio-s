@@ -83,7 +83,6 @@
   background-color: var(--first-color-alt);
 }
 
-/* Animasi zoom-out */
 @keyframes zoomOut {
   from {
     transform: scale(1);
@@ -103,7 +102,6 @@
   }
 }
 
-/* Modal (background) */
 .modal {
   display: flex;
   justify-content: center;
@@ -115,11 +113,10 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.8);
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Close button */
 .close {
   position: absolute;
   top: 20px;
@@ -138,21 +135,18 @@
   cursor: pointer;
 }
 
-/* Modal Content (image) with zoom-in animation */
 .modal_content.zoom-in {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 0.3rem 0.5rem var(--first-color);
-  animation: zoomIn 0.5s ease-in-out; /* Zoom-in animation */
+  animation: zoomIn 0.5s ease-in-out; 
 }
 
-/* Modal Content with zoom-out animation */
 .modal_content.zoom-out {
-  animation: zoomOut 0.5s ease-in-out; /* Zoom-out animation */
+  animation: zoomOut 0.5s ease-in-out; 
 }
 
-/* Fade-in animation for the modal background */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -162,11 +156,10 @@
   }
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .modal_content {
     max-width: 100%;
-    max-height: 80%; /* Adjust height for smaller screens */
+    max-height: 80%;
   }
 }
 
@@ -207,12 +200,5 @@
 
   .portofolio_description {
     font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .portofolio_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
