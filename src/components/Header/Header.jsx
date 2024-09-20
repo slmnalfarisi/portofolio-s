@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import ScrollHeader from "../Models/ScrollHeader/ScrollHeader";
 import ThemeToggle from "../Models/ThemeToggle/ThemeToggle";
 
 export const Header = () => {
   ScrollHeader();
+  const [isLanguageOpen, setLanguageOpen] = useState(false);
+
   useEffect(() => {
     const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
@@ -51,7 +53,6 @@ export const Header = () => {
   }, []);
 
   return (
-    // <!-- HEADER START -->
     <header className="header" id="header">
       <nav className="nav container">
         <a href="#" className="nav_logo reyname">
@@ -85,18 +86,26 @@ export const Header = () => {
                 <i className="uil uil-scenery nav_icon"></i> Project
               </a>
             </li>
-            <li className="nav_item">
-              <a href="#contact" className="nav_link">
-                <i className="uil uil-message nav_icon"></i> Kontak
-              </a>
-            </li>
           </ul>
           <i className="uil uil-times nav_close" id="nav-close"></i>
         </div>
 
         <div className="nav_btns">
-          {/* GANTI TEMA BTN */}
+          {/* Dropdown Language */}
+          <div className="dropdown">
+            <button className="lang_btn" onClick={() => setLanguageOpen(!isLanguageOpen)}>
+              ID
+            </button>
+            {isLanguageOpen && (
+              <div className="dropdown-content">
+                <a href="#">ID</a>
+                <a href="#">ENG</a>
+              </div>
+            )}
+          </div>
           <ThemeToggle />
+
+          {/* GANTI TEMA BTN */}
 
           <div className="nav_toggle" id="nav-toggle">
             <i className="uil uil-apps"></i>
