@@ -6,11 +6,10 @@ import ThemeToggle from "../Models/ThemeToggle/ThemeToggle";
 
 export const Header = () => {
   ScrollHeader();
-  const { t, i18n } = useTranslation(); // Menggunakan hook useTranslation
+  const { t, i18n } = useTranslation();
   const [isLanguageOpen, setLanguageOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Function to detect mobile view
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
   };
@@ -24,12 +23,10 @@ export const Header = () => {
     };
   }, []);
 
-  // Function to change language
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
-  // Get current language and display corresponding button label
   const currentLang = i18n.language === "id" ? "ID" : "EN";
 
   return (

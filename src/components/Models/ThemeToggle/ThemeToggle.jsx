@@ -5,18 +5,15 @@ const ThemeToggle = () => {
   const iconTheme = "uil-moon";
 
   const [isDarkTheme, setIsDarkTheme] = useState(() => {
-    // Check localStorage for previously selected theme
     const savedTheme = localStorage.getItem("selected-theme");
     return savedTheme === "dark";
   });
 
   const [icon, setIcon] = useState(() => {
-    // Check localStorage for previously selected icon
     const savedIcon = localStorage.getItem("selected-icon");
-    return savedIcon || "uil-sun"; // default icon
+    return savedIcon || "uil-sun";
   });
 
-  // Apply the theme based on state
   useEffect(() => {
     if (isDarkTheme) {
       document.body.classList.add(darkTheme);
@@ -39,7 +36,7 @@ const ThemeToggle = () => {
       className={`uil ${icon} change-theme`}
       id="theme-button"
       onClick={handleThemeToggle}
-      style={{ cursor: 'pointer' }} // Add additional styles if needed
+      style={{ cursor: 'pointer' }} 
     ></i>
   );
 };

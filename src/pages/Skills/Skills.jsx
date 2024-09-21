@@ -1,12 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next"; 
 import "./Skills.css";
 import skillsData from "../../docs/SkillsData";
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="skills section" id="skills">
       <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1200">
-        | KEAHLIAN |
+        | {t('KEAHLIAN')} |
       </h2>
       <span className="section_subtitle"></span>
 
@@ -17,7 +20,7 @@ const Skills = () => {
       >
         <div>
           <div className="skills_content">
-            <div className="skills_list grid"  data-aos="zoom-in" data-aos-duration="1200">
+            <div className="skills_list grid" data-aos="zoom-in" data-aos-duration="1200">
               {skillsData.map((skill, index) => (
                 <div className="skill_card" key={index}>
                   <div className="icon_skill_svg">
