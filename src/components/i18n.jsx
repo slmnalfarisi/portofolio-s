@@ -69,7 +69,25 @@ const resources = {
       "Demo": "Demo",
       "Source Code": "Source Code",
       "Load More": "Load More",
-      "Zoomed Project": "Zoomed Project"
+      "Zoomed Project": "Zoomed Project",
+
+      // CONTACT
+      "HUBUNGI SAYA": "CONTACT ME",
+      "Saya sangat terbuka untuk berkolaborasi! Isi form di data ini untuk menghubungi saya melalui email!": 
+      "I am very open to collaborations! Fill out this form to contact me via email!",
+      "LinkedIn": "LinkedIn",
+      "Email": "Email",
+      "Lokasi": "Location",
+      "Nama": "Name",
+      "Masukan Nama Anda...": "Enter Your Name...",
+      "Pesan": "Message",
+      "Masukan Pesan...": "Enter Your Message...",
+      "Kirim Pesan": "Send Message",
+      "Pesan Terkirim!": "Message Sent!",
+      "Pesan Anda berhasil dikirim.": "Your message has been sent successfully.",
+      "Oops...": "Oops...",
+      "Terjadi kesalahan, pesan gagal dikirim.": "An error occurred, the message failed to send.",
+      "Coba Lagi": "Try Again",
     }
   },
 
@@ -141,7 +159,24 @@ const resources = {
       "Demo": "Demo",
       "Source Code": "Source Code",
       "Load More": "Muat Lebih Banyak",
-      "Zoomed Project": "Proyek Zoomed"
+      "Zoomed Project": "Proyek Zoomed",
+
+      "HUBUNGI SAYA": "HUBUNGI SAYA",
+      "Saya sangat terbuka untuk berkolaborasi! Isi form di data ini untuk menghubungi saya melalui email!": 
+      "Saya sangat terbuka untuk berkolaborasi! Isi form di data ini untuk menghubungi saya melalui email!",
+      "LinkedIn": "LinkedIn",
+      "Email": "Email",
+      "Lokasi": "Lokasi",
+      "Nama": "Nama",
+      "Masukan Nama Anda...": "Masukan Nama Anda...",
+      "Pesan": "Pesan",
+      "Masukan Pesan...": "Masukan Pesan...",
+      "Kirim Pesan": "Kirim Pesan",
+      "Pesan Terkirim!": "Pesan Terkirim!",
+      "Pesan Anda berhasil dikirim.": "Pesan Anda berhasil dikirim.",
+      "Oops...": "Oops...",
+      "Terjadi kesalahan, pesan gagal dikirim.": "Terjadi kesalahan, pesan gagal dikirim.",
+      "Coba Lagi": "Coba Lagi",
     }
   }
 };
