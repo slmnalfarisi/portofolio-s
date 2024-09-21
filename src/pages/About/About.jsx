@@ -1,11 +1,14 @@
 import React from "react";
-import "./About.css"
+import { useTranslation } from "react-i18next";
+import "./About.css";
 
 const About = () => {
+  const { t } = useTranslation(); // Menggunakan hook useTranslation
+
   return (
     <section className="about section" id="about">
       <h2 data-aos="zoom-in" data-aos-duration="1300" className="section_title">
-        | TENTANG SAYA |
+        | {t('TENTANG SAYA')} |
       </h2>
       <span className="section_subtitle"></span>
 
@@ -23,12 +26,7 @@ const About = () => {
             data-aos="fade-right"
             data-aos-duration="1200"
           >
-            Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya
-            masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya
-            selalu berusaha untuk belajar sehingga dapat mengetahui bahkan
-            memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari
-            bahasa pemrograman yang baru. Baik dalam pengembangan suatu website
-            maupun suatu game 2D.
+            {t("Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya selalu berusaha untuk belajar sehingga dapat mengetahui bahkan memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari bahasa pemrograman yang baru. Baik dalam pengembangan suatu website maupun suatu game 2D.")}
           </p>
 
           <div className="about_buttons">
@@ -40,7 +38,7 @@ const About = () => {
               data-aos-duration="1300"
               id="down-cv"
             >
-              Download CV<i className="uil uil-download-alt button_icon"></i>
+              {t("Download CV")}<i className="uil uil-download-alt button_icon"></i>
             </a>
           </div>
         </div>
