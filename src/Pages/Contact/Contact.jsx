@@ -46,9 +46,6 @@ const Contact = () => {
       <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1300">
         | {t("HUBUNGI SAYA")} |
       </h2>
-      <span className="section_subtitle" data-aos="zoom-in" data-aos-duration="1500">
-        {t("Saya sangat terbuka untuk berkolaborasi! Isi form di data ini untuk menghubungi saya melalui email!")}
-      </span>
 
       <div className="contact_container container grid">
         <div>

@@ -88,6 +88,14 @@ const resources = {
       "Oops...": "Oops...",
       "Terjadi kesalahan, pesan gagal dikirim.": "An error occurred, the message failed to send.",
       "Coba Lagi": "Try Again",
+
+      // FOOTER 
+      "Reynaldo": "Reynaldo",
+      "Programmer": "Programmer",
+      "Keahlian": "Skills",
+      "Pengalaman": "Experience",
+      "Project": "Projects",
+      "All Rights Reserved": "All Rights Reserved",
     }
   },
 
@@ -161,6 +169,7 @@ const resources = {
       "Load More": "Muat Lebih Banyak",
       "Zoomed Project": "Proyek Zoomed",
 
+      // CONTACT
       "HUBUNGI SAYA": "HUBUNGI SAYA",
       "Saya sangat terbuka untuk berkolaborasi! Isi form di data ini untuk menghubungi saya melalui email!": 
       "Saya sangat terbuka untuk berkolaborasi! Isi form di data ini untuk menghubungi saya melalui email!",

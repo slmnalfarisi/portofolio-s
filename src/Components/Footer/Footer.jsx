@@ -1,63 +1,67 @@
-import React from 'react'
-import "./Footer.css"
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import "./Footer.css";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <footer class="footer">
-      <div class="footer_bg">
-        <div class="footer_container container grid">
+    <footer className="footer">
+      <div className="footer_bg">
+        <div className="footer_container container grid">
           <div>
-            <h1 class="footer_title">Reynaldo</h1>
-            <span class="footer_subtitle">Progammer</span>
+            <h1 className="footer_title">{t('Reynaldo')}</h1>
+            <span className="footer_subtitle">{t('Programmer')}</span>
           </div>
 
-          <ul class="footer_links">
+          <ul className="footer_links">
             <li>
-              <a href="#skills" class="footer_link">Keahlian</a>
+              <a href="#skills" className="footer_link">{t('Keahlian')}</a>
             </li>
             <li>
-              <a href="#experience" class="footer_link">Pengalaman</a>
+              <a href="#experience" className="footer_link">{t('Pengalaman')}</a>
             </li>
             <li>
-              <a href="#portofolio" class="footer_link">Project</a>
+              <a href="#portofolio" className="footer_link">{t('Project')}</a>
             </li>
           </ul>
 
-          <div
-            class="footer_socials"
-          >
+          <div className="footer_socials">
             <a
               href="https://www.instagram.com/rynldysllino"
               target="_blank"
-              class="footer_social"
+              rel="noopener noreferrer"
+              className="footer_social"
             >
-              <i class="uil uil-instagram"></i>
+              <i className="uil uil-instagram"></i>
             </a>
 
             <a
               href="https://github.com/reynaldo0"
               target="_blank"
-              class="footer_social"
+              rel="noopener noreferrer"
+              className="footer_social"
             >
-              <i class="uil uil-github"></i>
+              <i className="uil uil-github"></i>
             </a>
 
             <a
               href="https://www.linkedin.com/in/reynaldo-yusellino-564724270"
               target="_blank"
-              class="footer_social"
+              rel="noopener noreferrer"
+              className="footer_social"
             >
-              <i class="uil uil-linkedin-alt"></i>
+              <i className="uil uil-linkedin-alt"></i>
             </a>
           </div>
         </div>
 
-        <p class="footer_copy">
-          &#169; <span class="footname">Reynaldo</span>. All Right Reserved
+        <p className="footer_copy">
+          &#169; <span className="footname">{t('Reynaldo')}</span>. {t('All Rights Reserved')}
         </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
