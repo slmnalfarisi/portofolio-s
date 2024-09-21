@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <section className="skills section" id="skills">
       <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1200">
-        | {t('KEAHLIAN')} |
+        | {t('Keahlian')} |
       </h2>
       <span className="section_subtitle"></span>
 

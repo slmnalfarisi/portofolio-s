@@ -26,16 +26,12 @@ const resources = {
       "Hubungi Saya": "Contact Me",
 
       // ABOUT 
-      "TENTANG SAYA": "ABOUT ME",
+      "Tentang Saya": "About Me",
       "Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya selalu berusaha untuk belajar sehingga dapat mengetahui bahkan memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari bahasa pemrograman yang baru. Baik dalam pengembangan suatu website maupun suatu game 2D.": 
       "I am a student from SMKN 46 Jakarta who initially entered the IT world without a computer background, but I always strive to learn so that I can understand the flow of programming. Currently, I enjoy learning new programming languages, both in website development and 2D game development.",
       "Download CV": "Download CV",
 
-      // SKILLS
-      "KEAHLIAN": "SKILLS",
-
       // QUALIFICATIONS
-      "Pengalaman": "Experience",
       "Pendidikan": "Education",
       "Kompetisi": "Competitions",
       "Sekolah Dasar": "Elementary School",
@@ -91,10 +87,6 @@ const resources = {
 
       // FOOTER 
       "Reynaldo": "Reynaldo",
-      "Programmer": "Programmer",
-      "Keahlian": "Skills",
-      "Pengalaman": "Experience",
-      "Project": "Projects",
       "All Rights Reserved": "All Rights Reserved",
     }
   },
@@ -123,13 +115,10 @@ const resources = {
       "Hubungi Saya": "Hubungi Saya",
 
       // ABOUT 
-      "TENTANG SAYA": "TENTANG SAYA",
+      "Tentang Saya": "Tentang Saya",
       "Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya selalu berusaha untuk belajar sehingga dapat mengetahui bahkan memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari bahasa pemrograman yang baru. Baik dalam pengembangan suatu website maupun suatu game 2D.": 
       "Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya selalu berusaha untuk belajar sehingga dapat mengetahui bahkan memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari bahasa pemrograman yang baru. Baik dalam pengembangan suatu website maupun suatu game 2D.",
       "Download CV": "Download CV",
-
-      // SKILLS 
-      "KEAHLIAN": "KEAHLIAN",
 
       // QUALIFICATIONS
       "Pengalaman": "Pengalaman",

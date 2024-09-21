@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 data-aos="zoom-in" data-aos-duration="1300" className="section_title">
-        | {t('TENTANG SAYA')} |
+        | {t('Tentang Saya')} |
       </h2>
       <span className="section_subtitle"></span>
 
