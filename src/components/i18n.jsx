@@ -106,7 +106,6 @@ const resources = {
       "Beranda": "Beranda",
       "Tentang": "Tentang",
       "Keahlian": "Keahlian",
-      "Pengalaman": "Pengalaman",
       "Project": "Project",
       "ID": "ID",
       "ENG": "ENG",

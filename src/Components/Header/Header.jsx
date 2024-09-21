@@ -9,6 +9,7 @@ export const Header = () => {
   const { t, i18n } = useTranslation();
   const [isLanguageOpen, setLanguageOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
@@ -17,7 +18,6 @@ export const Header = () => {
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -25,9 +25,15 @@ export const Header = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setLanguageOpen(false); // Close dropdown after selection
   };
 
   const currentLang = i18n.language === "id" ? "ID" : "EN";
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+    if (isMenuOpen) setLanguageOpen(false); // Close language dropdown when menu is opened
+  };
 
   return (
     <header className="header" id="header">
@@ -36,7 +42,7 @@ export const Header = () => {
           Reynaldo
         </a>
 
-        <div className="nav_menu" id="nav-menu">
+        <div className={`nav_menu ${isMenuOpen ? "show-menu" : ""}`} id="nav-menu">
           <ul className="nav_list grid">
             <li className="nav_item">
               <a href="#home" className="nav_link active-link">
@@ -64,25 +70,27 @@ export const Header = () => {
               </a>
             </li>
           </ul>
-          <i className="uil uil-times nav_close" id="nav-close"></i>
+          <i className="uil uil-times nav_close" id="nav-close" onClick={toggleMenu}></i>
         </div>
 
         <div className="nav_btns">
           {/* Dropdown Language */}
-          <div className="dropdown">
-            <button className="lang_btn" onClick={() => setLanguageOpen(!isLanguageOpen)}>
-              {currentLang} <i className={`uil ${isMobile ? "uil-angle-up" : "uil-angle-down"}`}></i>
-            </button>
-            {isLanguageOpen && (
-              <div className="dropdown-content">
-                <a href="#" onClick={() => changeLanguage('id')}>{t('ID')}</a>
-                <a href="#" onClick={() => changeLanguage('en')}>{t('EN')}</a>
-              </div>
-            )}
-          </div>
+          {!isMenuOpen && ( // Hide dropdown if menu is open
+            <div className="dropdown">
+              <button className="lang_btn" onClick={() => setLanguageOpen(!isLanguageOpen)}>
+                {currentLang} <i className={`uil ${isMobile ? "uil-angle-up" : "uil-angle-down"}`}></i>
+              </button>
+              {isLanguageOpen && (
+                <div className="dropdown-content">
+                  <a href="#" onClick={() => changeLanguage('id')}>{t('ID')}</a>
+                  <a href="#" onClick={() => changeLanguage('en')}>{t('EN')}</a>
+                </div>
+              )}
+            </div>
+          )}
           <ThemeToggle />
 
-          <div className="nav_toggle" id="nav-toggle">
+          <div className="nav_toggle" id="nav-toggle" onClick={toggleMenu}>
             <i className="uil uil-apps"></i>
           </div>
         </div>
