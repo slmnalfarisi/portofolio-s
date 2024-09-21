@@ -1,64 +1,112 @@
 const projectData = [
   {
-    title: "Rebellum",
+    title: {
+      en: "Rebellum",
+      id: "Rebellum"
+    },
     image: "/project/rebellum.webp",
     tools: ["React TS", "Three Fiber", "Tailwind"],
-    description: "Rebellum adalah sebuah website yang memberikan informasi serta solusi terkait kenakalan remaja di Indonesia",
+    description: {
+      en: "Rebellum is a website that provides information and solutions related to juvenile delinquency in Indonesia.",
+      id: "Rebellum adalah sebuah website yang memberikan informasi serta solusi terkait kenakalan remaja di Indonesia"
+    },
     demoLink: "https://rebellum.vercel.app/",
     sourceLink: "https://github.com/reynaldo0/rebellum-v2"
   },
   {
-    title: "HealThyself",
+    title: {
+      en: "HealThyself",
+      id: "HealThyself"
+    },
     image: "/project/healthyself.webp",
     tools: ["React JS", "Three Fiber", "Tailwind"],
-    description: "Healthyself adalah sebuah website yang memberikan informasi terkait kesehatan manusia dari Bayi hingga Lansia",
+    description: {
+      en: "Healthyself is a website that provides information about human health from infancy to old age.",
+      id: "Healthyself adalah sebuah website yang memberikan informasi terkait kesehatan manusia dari Bayi hingga Lansia"
+    },
     demoLink: "https://healthyself.vercel.app/",
     sourceLink: "https://github.com/reynaldo0/HealThyself"
   },
   {
-    title: "Artem",
+    title: {
+      en: "Artem",
+      id: "Artem"
+    },
     image: "/project/artem.png",
     tools: ["React JS", "Three Fiber", "Tailwind"],
-    description: "Artem adalah sebuah website yang memberikan informasi terkait karya seniman ternama.",
+    description: {
+      en: "Artem is a website that provides information about the works of renowned artists.",
+      id: "Artem adalah sebuah website yang memberikan informasi terkait karya seniman ternama."
+    },
     demoLink: "https://artems.vercel.app/",
     sourceLink: "https://github.com/reynaldo0/artems"
   },
   {
-    title: "VEREV Shops",
+    title: {
+      en: "VEREV Shops",
+      id: "VEREV Shops"
+    },
     image: "/project/verev.png",
     tools: ["Tailwind", "Django", "JavaScript"],
-    description: "VEREV Shops adalah sebuah website Kasir yang dapat berintraksi langsung dengan pengguna",
+    description: {
+      en: "VEREV Shops is a cash register website that can interact directly with users.",
+      id: "VEREV Shops adalah sebuah website Kasir yang dapat berintraksi langsung dengan pengguna"
+    },
     demoLink: "",
     sourceLink: "https://github.com/reynaldo0/verevshops"
   },
   {
-    title: "Enheal Sycology",
+    title: {
+      en: "Enheal Sycology",
+      id: "Enheal Sycology"
+    },
     image: "/project/enheal.png",
     tools: ["Tailwind", "JavaScript"],
-    description: "Enheal Sycology adalah sebuah website yang memberikan edukasi terkait kesehatan mental",
+    description: {
+      en: "Enheal Sycology is a website that provides education related to mental health.",
+      id: "Enheal Sycology adalah sebuah website yang memberikan edukasi terkait kesehatan mental"
+    },
     demoLink: "",
     sourceLink: "https://github.com/reynaldo0/enheal-sycology"
   },
   {
-    title: "Gothel",
+    title: {
+      en: "Gothel",
+      id: "Gothel"
+    },
     image: "/project/gothel.png",
     tools: ["WordPress", "WooCommerce"],
-    description: "Gothel adalah sebuah website yang memberikan informasi penginapan hotel di Jakarta, Bandung dan Yogyakarta",
+    description: {
+      en: "Gothel is a website that provides information on hotel accommodations in Jakarta, Bandung, and Yogyakarta.",
+      id: "Gothel adalah sebuah website yang memberikan informasi penginapan hotel di Jakarta, Bandung dan Yogyakarta"
+    },
     demoLink: "https://gothel.42web.io/"
   },
   {
-    title: "Wafari",
+    title: {
+      en: "Wafari",
+      id: "Wafari"
+    },
     image: "/project/wafarii.webp",
     tools: ["HTML", "CSS", "JavaScript"],
-    description: "Wafari adalah sebuah website yang memberikan informasi terkait wisata yang ada di DKI Jakarta",
+    description: {
+      en: "Wafari is a website that provides information about tourism in DKI Jakarta.",
+      id: "Wafari adalah sebuah website yang memberikan informasi terkait wisata yang ada di DKI Jakarta"
+    },
     demoLink: "https://wafariforensix.vercel.app/",
     sourceLink: "https://github.com/reynaldo0/wafariforensix"
   },
   {
-    title: "Fotix Cinema",
+    title: {
+      en: "Fotix Cinema",
+      id: "Fotix Cinema"
+    },
     image: "/project/fotix.webp",
     tools: ["HTML", "SCSS", "JavaScript"],
-    description: "Fotix Cinema adalah website yang menampilkan daftar daftar film menarik untuk para remaja",
+    description: {
+      en: "Fotix Cinema is a website that showcases a list of interesting movies for teenagers.",
+      id: "Fotix Cinema adalah website yang menampilkan daftar daftar film menarik untuk para remaja"
+    },
     demoLink: "https://fotixcinema.vercel.app/",
     sourceLink: "https://github.com/reynaldo0/fotixcinema"
   }

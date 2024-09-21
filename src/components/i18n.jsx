@@ -47,6 +47,29 @@ const resources = {
       "Juara Harapan III": "3rd Place",
       "Juara 2": "2nd Place",
       "Juara Harapan I": "4th Place",
+      
+      // PROJECT
+      "Rebellum": "Rebellum",
+      "RebellumDescription": "Rebellum is a website that provides information and solutions related to juvenile delinquency in Indonesia.",
+      "HealThyself": "HealThyself",
+      "HealthyselfDescription": "Healthyself is a website that provides information about human health from infancy to old age.",
+      "Artem": "Artem",
+      "ArtemDescription": "Artem is a website that provides information about the works of renowned artists.",
+      "VEREV Shops": "VEREV Shops",
+      "VEREVShopsDescription": "VEREV Shops is a cashier website that can interact directly with users.",
+      "Enheal Sycology": "Enheal Sycology",
+      "EnhealSycologyDescription": "Enheal Sycology is a website that provides education about mental health.",
+      "Gothel": "Gothel",
+      "GothelDescription": "Gothel is a website that provides information about hotel accommodations in Jakarta, Bandung, and Yogyakarta.",
+      "Wafari": "Wafari",
+      "WafariDescription": "Wafari is a website that provides information about tourist attractions in DKI Jakarta.",
+      "Fotix Cinema": "Fotix Cinema",
+      "FotixCinemaDescription": "Fotix Cinema is a website that displays a list of interesting movies for teenagers.",
+      "PROJECT": "Project",
+      "Demo": "Demo",
+      "Source Code": "Source Code",
+      "Load More": "Load More",
+      "Zoomed Project": "Zoomed Project"
     }
   },
 
@@ -96,6 +119,29 @@ const resources = {
       "Juara Harapan III": "Juara Harapan III",
       "Juara 2": "Juara 2",
       "Juara Harapan I": "Juara Harapan I",
+
+      // PROJECT 
+      "Rebellum": "Rebellum",
+      "RebellumDescription": "Rebellum adalah sebuah website yang memberikan informasi serta solusi terkait kenakalan remaja di Indonesia.",
+      "HealThyself": "HealThyself",
+      "HealthyselfDescription": "Healthyself adalah sebuah website yang memberikan informasi terkait kesehatan manusia dari Bayi hingga Lansia.",
+      "Artem": "Artem",
+      "ArtemDescription": "Artem adalah sebuah website yang memberikan informasi terkait karya seniman ternama.",
+      "VEREV Shops": "VEREV Shops",
+      "VEREVShopsDescription": "VEREV Shops adalah sebuah website Kasir yang dapat berintraksi langsung dengan pengguna.",
+      "Enheal Sycology": "Enheal Sycology",
+      "EnhealSycologyDescription": "Enheal Sycology adalah sebuah website yang memberikan edukasi terkait kesehatan mental.",
+      "Gothel": "Gothel",
+      "GothelDescription": "Gothel adalah sebuah website yang memberikan informasi penginapan hotel di Jakarta, Bandung dan Yogyakarta.",
+      "Wafari": "Wafari",
+      "WafariDescription": "Wafari adalah sebuah website yang memberikan informasi terkait wisata yang ada di DKI Jakarta.",
+      "Fotix Cinema": "Fotix Cinema",
+      "FotixCinemaDescription": "Fotix Cinema adalah website yang menampilkan daftar film menarik untuk para remaja.",
+      "PROJECT": "Project",
+      "Demo": "Demo",
+      "Source Code": "Source Code",
+      "Load More": "Muat Lebih Banyak",
+      "Zoomed Project": "Proyek Zoomed"
     }
   }
 };
