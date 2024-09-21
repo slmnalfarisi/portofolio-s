@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const options = {
-      strings: homeData.profileData.subtitle.map((item) => t(item)), 
+      strings: homeData.profileData.subtitle.map((item) => t(item)),
       typeSpeed: 70,
       backSpeed: 30,
       loop: true,
@@ -21,10 +21,10 @@ const Home = () => {
     return () => {
       typed.destroy();
     };
-  }, [t]); 
+  }, [t]);
 
   return (
-    <section className="home section" id="home">
+    <section className="home section" id="home" aria-label={t("homepage")}>
       <div className="home_container container grid">
         <div className="home_content grid">
           <div className="home_social">
@@ -37,6 +37,7 @@ const Home = () => {
                 data-aos="zoom-in"
                 data-aos-duration={link.duration}
                 rel="noreferrer"
+                aria-label={`Link to ${link.label}`}
               >
                 <i className={link.iconClass}></i>
               </a>
@@ -49,6 +50,7 @@ const Home = () => {
               viewBox="0 0 200 187"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
             >
               <mask id="mask0" mask-type="alpha">
                 <path
@@ -65,8 +67,7 @@ const Home = () => {
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                 />
-
-                <image className="home_blob-img" xlinkHref="/me.png" />
+                <image className="home_blob-img" xlinkHref="/me.png" alt={t("profile picture")} />
               </g>
             </svg>
           </div>
@@ -105,6 +106,7 @@ const Home = () => {
               className="button button--flex"
               data-aos="zoom-in-right"
               data-aos-duration="1450"
+              aria-label={t("Contact me")}
             >
               {t("Hubungi Saya")}
               <i className="uil uil-message button_icon"></i>
