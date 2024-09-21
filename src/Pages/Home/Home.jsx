@@ -1,14 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import { useTranslation } from "react-i18next";
 import "./Home.css";
 import { homeData } from "../../docs/HomeData";
 
 const Home = () => {
+  const { t } = useTranslation();
   const typedElement = useRef(null);
 
   useEffect(() => {
     const options = {
-      strings: homeData.profileData.subtitle,
+      strings: homeData.profileData.subtitle.map((item) => t(item)), 
       typeSpeed: 70,
       backSpeed: 30,
       loop: true,
@@ -19,13 +21,12 @@ const Home = () => {
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [t]); 
 
   return (
     <section className="home section" id="home">
       <div className="home_container container grid">
         <div className="home_content grid">
-          {/* Social Media Links */}
           <div className="home_social">
             {homeData.socialLinks.map((link, index) => (
               <a
@@ -42,7 +43,6 @@ const Home = () => {
             ))}
           </div>
 
-          {/* Profile Image */}
           <div className="home_img" data-aos="zoom-in" data-aos-duration="1200">
             <svg
               className="home_blob"
@@ -71,21 +71,20 @@ const Home = () => {
             </svg>
           </div>
 
-          {/* Profile Data */}
           <div className="home_data">
             <h3
               className="home_about"
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              {homeData.profileData.about}
+              {t(homeData.profileData.about)}
             </h3>
             <h1
               className="home_title"
               data-aos="fade-right"
               data-aos-duration="1200"
             >
-              {homeData.profileData.title}
+              {t(homeData.profileData.title)}
             </h1>
             <h3
               className="home_subtitle"
@@ -99,7 +98,7 @@ const Home = () => {
               data-aos="fade-right"
               data-aos-duration="1400"
             >
-              {homeData.profileData.description}
+              {t(homeData.profileData.description)}
             </p>
             <a
               href={homeData.profileData.contactLink}
@@ -107,7 +106,8 @@ const Home = () => {
               data-aos="zoom-in-right"
               data-aos-duration="1450"
             >
-              Hubungi Saya<i className="uil uil-message button_icon"></i>
+              {t("Hubungi Saya")}
+              <i className="uil uil-message button_icon"></i>
             </a>
           </div>
         </div>

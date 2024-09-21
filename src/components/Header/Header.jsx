@@ -1,56 +1,36 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Header.css";
 import ScrollHeader from "../Models/ScrollHeader/ScrollHeader";
 import ThemeToggle from "../Models/ThemeToggle/ThemeToggle";
 
 export const Header = () => {
   ScrollHeader();
+  const { t, i18n } = useTranslation(); // Menggunakan hook useTranslation
   const [isLanguageOpen, setLanguageOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Function to detect mobile view
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
 
   useEffect(() => {
-    const navMenu = document.getElementById("nav-menu"),
-      navToggle = document.getElementById("nav-toggle"),
-      navClose = document.getElementById("nav-close");
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
-    // JIKA DI KLIK AKAN MENAMPILKAN
-    if (navToggle) {
-      navToggle.addEventListener("click", () => {
-        navMenu.classList.add("show-menu");
-      });
-    }
-
-    // CLOSE
-    if (navClose) {
-      navClose.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu");
-      });
-    }
-
-    // REMOVE MENU MOBILE
-    const navLink = document.querySelectorAll(".nav_link");
-
-    function linkAction() {
-      const navMenu = document.getElementById("nav-menu");
-      navMenu.classList.remove("show-menu");
-    }
-
-    navLink.forEach((n) => n.addEventListener("click", linkAction));
-
-    // Cleanup event listeners on component unmount
     return () => {
-      if (navToggle) {
-        navToggle.removeEventListener("click", () => {
-          navMenu.classList.add("show-menu");
-        });
-      }
-      if (navClose) {
-        navClose.removeEventListener("click", () => {
-          navMenu.classList.remove("show-menu");
-        });
-      }
-      navLink.forEach((n) => n.removeEventListener("click", linkAction));
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  // Function to change language
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  // Get current language and display corresponding button label
+  const currentLang = i18n.language === "id" ? "ID" : "EN";
 
   return (
     <header className="header" id="header">
@@ -63,27 +43,27 @@ export const Header = () => {
           <ul className="nav_list grid">
             <li className="nav_item">
               <a href="#home" className="nav_link active-link">
-                <i className="uil uil-estate nav_icon"></i> Beranda
+                <i className="uil uil-estate nav_icon"></i> {t('Beranda')}
               </a>
             </li>
             <li className="nav_item">
               <a href="#about" className="nav_link">
-                <i className="uil uil-user nav_icon"></i> Tentang
+                <i className="uil uil-user nav_icon"></i> {t('Tentang')}
               </a>
             </li>
             <li className="nav_item">
               <a href="#skills" className="nav_link">
-                <i className="uil uil-file-alt nav_icon"></i> Keahlian
+                <i className="uil uil-file-alt nav_icon"></i> {t('Keahlian')}
               </a>
             </li>
             <li className="nav_item">
               <a href="#experience" className="nav_link">
-                <i className="uil uil-envelope-edit nav_icon"></i> Pengalaman
+                <i className="uil uil-envelope-edit nav_icon"></i> {t('Pengalaman')}
               </a>
             </li>
             <li className="nav_item">
               <a href="#portofolio" className="nav_link">
-                <i className="uil uil-scenery nav_icon"></i> Project
+                <i className="uil uil-scenery nav_icon"></i> {t('Project')}
               </a>
             </li>
           </ul>
@@ -94,18 +74,16 @@ export const Header = () => {
           {/* Dropdown Language */}
           <div className="dropdown">
             <button className="lang_btn" onClick={() => setLanguageOpen(!isLanguageOpen)}>
-              ID
+              {currentLang} <i className={`uil ${isMobile ? "uil-angle-up" : "uil-angle-down"}`}></i>
             </button>
             {isLanguageOpen && (
               <div className="dropdown-content">
-                <a href="#">ID</a>
-                <a href="#">ENG</a>
+                <a href="#" onClick={() => changeLanguage('id')}>{t('ID')}</a>
+                <a href="#" onClick={() => changeLanguage('en')}>{t('EN')}</a>
               </div>
             )}
           </div>
           <ThemeToggle />
-
-          {/* GANTI TEMA BTN */}
 
           <div className="nav_toggle" id="nav-toggle">
             <i className="uil uil-apps"></i>
