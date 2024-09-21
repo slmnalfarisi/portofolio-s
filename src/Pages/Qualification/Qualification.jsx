@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./Qualification.css";
 import { qualificationData } from "../../docs/QualificationData";
 
 const Qualification = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("#education");
   const [isFirstRender, setIsFirstRender] = useState(true);
 
@@ -49,8 +51,8 @@ const Qualification = () => {
         {index % 2 === 0 ? (
           <>
             <div>
-              <h3 className="qualification_title">{item.title}</h3>
-              <span className="qualification_subtitle">{item.subtitle}</span>
+              <h3 className="qualification_title">{t(item.title.en)}</h3>
+              <span className="qualification_subtitle">{t(item.subtitle.en)}</span>
               <div className="qualification_calendar">
                 <i className="uil uil-calendar-alt"></i>
                 {item.calendar}
@@ -70,8 +72,8 @@ const Qualification = () => {
               {index !== data.length - 1 && <span className="qualification_line"></span>}
             </div>
             <div>
-              <h3 className="qualification_title">{item.title}</h3>
-              <span className="qualification_subtitle">{item.subtitle}</span>
+              <h3 className="qualification_title">{t(item.title.en)}</h3>
+              <span className="qualification_subtitle">{t(item.subtitle.en)}</span>
               <div className="qualification_calendar">
                 <i className="uil uil-calendar-alt"></i>
                 {item.calendar}
@@ -81,12 +83,12 @@ const Qualification = () => {
         )}
       </div>
     ));
-  };
+  };  
 
   return (
     <section className="qualification section" id="experience">
       <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1400">
-        | PENGALAMAN |
+        | {t('Pengalaman')} |
       </h2>
 
       <div
@@ -102,7 +104,7 @@ const Qualification = () => {
             onClick={() => handleTabClick("#education")}
           >
             <i className="uil uil-graduation-cap qualification_icon"></i>
-            Pendidikan
+            {t('Pendidikan')}
           </div>
           <div
             className={`qualification_button button--flex ${
@@ -111,7 +113,7 @@ const Qualification = () => {
             onClick={() => handleTabClick("#work")}
           >
             <i className="uil uil-trophy qualification_icon"></i>
-            Kompetisi
+            {t('Kompetisi')}
           </div>
         </div>
 
