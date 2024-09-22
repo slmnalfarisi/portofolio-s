@@ -27,10 +27,9 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>{t("Home Page - Your Name or Brand")}</title>
         <meta name="description" content={t(homeData.profileData.description)} />
         <meta name="keywords" content="portfolio, developer, projects, skills" />
-        <meta property="og:title" content={t("Home Page - Your Name or Brand")} />
+        <meta property="og:title" content={t("Reynaldo - Programmer")} />
         <meta property="og:description" content={t(homeData.profileData.description)} />
         <meta property="og:image" content="/me.png" />
         <meta property="og:type" content="website" />

@@ -15,14 +15,12 @@ const Skills = () => {
 
       <div
         className="skills_container container grid"
-        data-aos="fade-up"
-        data-aos-duration="600"
       >
         <div>
           <div className="skills_content">
-            <div className="skills_list grid" data-aos="fade-up" data-aos-duration="600">
+            <div className="skills_list grid">
               {skillsData.map((skill, index) => (
-                <div className="skill_card" key={index}>
+                <div className="skill_card" key={index}  data-aos="fade-up" data-aos-duration="600">
                   <div className="icon_skill_svg">
                     <img src={skill.icon} alt={skill.name} />
                   </div>

@@ -53,6 +53,9 @@ const Project = () => {
               alt={t(project.title[i18n.language])}
               className="portofolio_image"
             />
+            {/* Magnifying Glass Icon */}
+            <i className="uil uil-search-plus magnifying_icon"></i>
+
             <div className="portofolio_tools">
               {project.tools.map((tool, i) => (
                 <span key={i} className="tool">

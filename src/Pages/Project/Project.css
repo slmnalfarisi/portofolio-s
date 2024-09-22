@@ -10,6 +10,8 @@
   padding: 1rem;
   border-radius: 0.75rem;
   box-shadow: 0 0.3rem 0.5rem var(--first-color);
+  position: relative;
+  overflow: hidden;
 }
 
 .portofolio_image {
@@ -18,10 +20,31 @@
   max-width: 100%;
   width: 100%;
   height: 190px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; 
+  position: relative;
+  z-index: 1;
 }
 
 .portofolio_image:hover {
-  filter: grayscale(0%);
+  opacity: 0.5; 
+}
+
+.portofolio_card .magnifying_icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 2rem;
+  color: var(--first-color-alt);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+  z-index: 2;
+}
+
+.portofolio_image:hover + .magnifying_icon {
+  opacity: 1; 
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .portofolio_tools {
