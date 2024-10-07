@@ -32,17 +32,18 @@ const resources = {
       "Download CV": "Download CV",
 
       // QUALIFICATIONS
-      "Pendidikan": "Education",
-      "Kompetisi": "Competitions",
-      "Sekolah Dasar": "Elementary School",
-      "Sekolah Menengah Pertama": "Junior High School",
-      "Sekolah Menengah Kejuruan": "Vocational High School",
-      "Peserta": "Participant",
-      "Grand Finalis": "Grand Finalist",
-      "Juara 2 & Best Desain": "2nd Place & Best Design",
-      "Juara Harapan III": "3rd Place",
-      "Juara 2": "2nd Place",
-      "Juara Harapan I": "4th Place",
+        "Pengalaman": "Experience",
+        "Pendidikan": "Education",
+        "Kompetisi": "Competitions",
+        "Sekolah Dasar": "Elementary School",
+        "Sekolah Menengah Pertama": "Junior High School",
+        "Sekolah Menengah Kejuruan": "Vocational High School",
+        "Peserta": "Participant",
+        "Grand Finalis": "Grand Finalist",
+        "Juara 2 & Best Desain": "2nd Place & Best Design",
+        "Juara Harapan III": "3rd Place",
+        "Juara 2": "2nd Place",
+        "Juara Harapan I": "4th Place",
       
       // PROJECT
       "Rebellum": "Rebellum",
@@ -121,18 +122,19 @@ const resources = {
       "Download CV": "Download CV",
 
       // QUALIFICATIONS
-      "Pengalaman": "Pengalaman",
-      "Pendidikan": "Pendidikan",
-      "Kompetisi": "Kompetisi",
-      "Sekolah Dasar": "Sekolah Dasar",
-      "Sekolah Menengah Pertama": "Sekolah Menengah Pertama",
-      "Sekolah Menengah Kejuruan": "Sekolah Menengah Kejuruan",
-      "Peserta": "Peserta",
-      "Grand Finalis": "Grand Finalis",
-      "Juara 2 & Best Desain": "Juara 2 & Best Desain",
-      "Juara Harapan III": "Juara Harapan III",
-      "Juara 2": "Juara 2",
-      "Juara Harapan I": "Juara Harapan I",
+        "Pengalaman": "Pengalaman",
+        "Pendidikan": "Pendidikan",
+        "Kompetisi": "Kompetisi",
+        "Sekolah Dasar": "Sekolah Dasar",
+        "Sekolah Menengah Pertama": "Sekolah Menengah Pertama",
+        "Sekolah Menengah Kejuruan": "Sekolah Menengah Kejuruan",
+        "Peserta": "Peserta",
+        "Grand Finalis": "Grand Finalis",
+        "Juara 2 & Best Desain": "Juara 2 & Best Desain",
+        "Juara Harapan III": "Juara Harapan III",
+        "Juara 2": "Juara 2",
+        "Juara Harapan I": "Juara Harapan I",
+
 
       // PROJECT 
       "Rebellum": "Rebellum",
@@ -154,7 +156,7 @@ const resources = {
       "PROJECT": "Project",
       "Demo": "Demo",
       "Source Code": "Source Code",
-      "Load More": "Muat Lebih Banyak",
+      "Load More": "Load More",
       "Zoomed Project": "Proyek Zoomed",
 
       // CONTACT

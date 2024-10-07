@@ -31,7 +31,7 @@ const Qualification = () => {
           content.classList.add("qualification_zoom-out");
           setTimeout(() => {
             content.style.display = "none";
-          }, 400); 
+          }, 400);
         } else {
           content.style.display = "none";
         }
@@ -83,12 +83,12 @@ const Qualification = () => {
         )}
       </div>
     ));
-  };  
+  };
 
   return (
     <section className="qualification section" id="experience">
       <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1400">
-        | {t('Pengalaman')} |
+        | {t("Pengalaman")} |
       </h2>
 
       <div
@@ -104,7 +104,7 @@ const Qualification = () => {
             onClick={() => handleTabClick("#education")}
           >
             <i className="uil uil-graduation-cap qualification_icon"></i>
-            {t('Pendidikan')}
+            {t("Pendidikan")}
           </div>
           <div
             className={`qualification_button button--flex ${
@@ -113,7 +113,7 @@ const Qualification = () => {
             onClick={() => handleTabClick("#work")}
           >
             <i className="uil uil-trophy qualification_icon"></i>
-            {t('Kompetisi')}
+            {t("Kompetisi")}
           </div>
         </div>
 

@@ -75,7 +75,7 @@
 
 .portofolio_button {
   background-color: var(--first-color);
-  border-radius: 9px;
+  border-radius: 10px;
   margin-right: 0.55rem;
   padding: 0.5rem;
   color: #fff;
@@ -94,7 +94,7 @@
   background-color: var(--first-color);
   font-size: 20px;
   color: #fff;
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 0.7rem 3rem 0.7rem 3rem;
   border-radius: .6rem;
   font-weight: var(--font-medium);
   margin-top: 10px;
