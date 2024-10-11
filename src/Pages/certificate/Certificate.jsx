@@ -3,11 +3,13 @@ import "./Certificate.css"; // Pastikan untuk mengimpor CSS
 
 const Certificate = () => {
   const [selectedType, setSelectedType] = useState("academic"); // Tipe sertifikat yang dipilih
+  const [isModalOpen, setIsModalOpen] = useState(false); // State untuk mengontrol modal
+  const [currentImage, setCurrentImage] = useState(""); // State untuk menyimpan gambar saat dibuka di modal
 
   const academicCertificates = [
     {
       title: "IT Software Solution for Business - LKS Tingkat Kota Jakarta Timur 2023",
-      img: "/certificate/IITC.PNG",
+      img: "/project/artem.png",
     },
     {
       title: "Web Development Technifest",
@@ -31,6 +33,15 @@ const Certificate = () => {
 
   const handleClick = (index) => {
     setCurrentIndex(index);
+  };
+
+  const openModal = (img) => {
+    setCurrentImage(img);
+    setIsModalOpen(true); // Buka modal
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false); // Tutup modal
   };
 
   return (
@@ -67,10 +78,18 @@ const Certificate = () => {
             </div>
           ))}
         </div>
-        <div className="certificate-display">
+        <div className="certificate-display" onClick={() => openModal(certificates[currentIndex].img)}>
           <img src={certificates[currentIndex].img} alt="Certificate" />
         </div>
       </div>
+
+      {/* Modal untuk Menampilkan Gambar Penuh Layar */}
+      {isModalOpen && (
+        <div className="modal" onClick={closeModal}>
+          <span className="close" onClick={closeModal}>&times;</span>
+          <img className="modal-content" src={currentImage} alt="Certificate" />
+        </div>
+      )}
     </section>
   );
 };
