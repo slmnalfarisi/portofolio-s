@@ -1,35 +1,14 @@
 import React, { useState } from "react";
+import { academicCertificates, courseCertificates } from "../../docs/CertificateData"; // Mengimpor data dari file certificates
 import "./Certificate.css"; // Pastikan untuk mengimpor CSS
 
 const Certificate = () => {
-  const [selectedType, setSelectedType] = useState("academic"); // Tipe sertifikat yang dipilih
-  const [isModalOpen, setIsModalOpen] = useState(false); // State untuk mengontrol modal
-  const [currentImage, setCurrentImage] = useState(""); // State untuk menyimpan gambar saat dibuka di modal
-
-  const academicCertificates = [
-    {
-      title: "IT Software Solution for Business - LKS Tingkat Kota Jakarta Timur 2023",
-      img: "/project/artem.png",
-    },
-    {
-      title: "Web Development Technifest",
-      img: "https://via.placeholder.com/500x600?text=Certificate+3",
-    },
-  ];
-
-  const courseCertificates = [
-    {
-      title: "Cloud Computing Club Competition - Regional DKI Jakarta",
-      img: "/project/enheal.png",
-    },
-    {
-      title: "IT Software Solution for Business - LKS Tingkat Wilayah 1 Jakarta Timur 2022",
-      img: "https://via.placeholder.com/500x600?text=Certificate+4",
-    },
-  ];
+  const [selectedType, setSelectedType] = useState("academic");
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [currentImage, setCurrentImage] = useState(""); 
+  const [currentIndex, setCurrentIndex] = useState(0); 
 
   const certificates = selectedType === "academic" ? academicCertificates : courseCertificates;
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleClick = (index) => {
     setCurrentIndex(index);
@@ -37,11 +16,11 @@ const Certificate = () => {
 
   const openModal = (img) => {
     setCurrentImage(img);
-    setIsModalOpen(true); // Buka modal
+    setIsModalOpen(true); 
   };
 
   const closeModal = () => {
-    setIsModalOpen(false); // Tutup modal
+    setIsModalOpen(false);
   };
 
   return (
