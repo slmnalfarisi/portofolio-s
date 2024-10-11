@@ -13,6 +13,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ScrollActive from './components/Models/ScrollActive/ScrollActive';
 import ScrollUp from './components/Models/ScrollUp/ScrollUp';
+import Certificate from './Pages/certificate/Certificate';
 
 Aos.init({
   // Add your AOS options here if needed
@@ -34,6 +35,7 @@ function App() {
       <main className="main">
         <Home />
         <About />
+        <Certificate/>
         <Skills />
         <Qualification />
         <Project />

@@ -1,0 +1,77 @@
+.certificate-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.certificate-list {
+    width: 30%;
+    /* Lebar container teks */
+    max-height: 600px;
+    overflow-y: auto;
+    /* Scroll jika diperlukan */
+    margin-right: 20px;
+}
+
+.certificate-item {
+    padding: 15px;
+    background-color: var(--first-color-alt);
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.certificate-item:hover {
+    background-color: var(--first-color);
+    /* Warna saat hover */
+}
+
+.certificate-item.active {
+    background-color: var(--container-color);
+    color: var(--name-color);
+    font-weight: bold;
+}
+
+.certificate-display {
+    width: 60%;
+    /* Lebar container gambar */
+}
+
+.certificate-display img {
+    width: 100%;
+    /* Menyesuaikan lebar gambar dengan container */
+    height: auto;
+    /* Mempertahankan rasio gambar */
+    border-radius: 5px;
+}
+
+.category-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-selector button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: none;
+    background-color: var(--first-color-alt);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category-selector button:hover {
+    background-color: var(--first-color);
+    /* Warna saat hover */
+}
+
+.category-selector button.active {
+    background-color: var(--first-color);
+    font-weight: bold;
+}
