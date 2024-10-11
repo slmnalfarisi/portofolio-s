@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 20px;
     color: white;
+    flex-wrap: wrap; /* Membuat elemen berpindah ke baris baru jika ruang tidak cukup */
 }
 
 .certificate-list {
@@ -44,7 +45,6 @@
     border-radius: 5px;
     object-fit: contain; /* Menjaga rasio aspek gambar */
 }
-
 
 .category-selector {
     display: flex;
@@ -101,4 +101,33 @@
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    .certificate-list {
+        width: 100%; /* Lebar penuh pada perangkat kecil */
+        margin-right: 0; /* Hilangkan margin pada perangkat kecil */
+        margin-bottom: 20px; /* Tambahkan margin bawah */
+    }
+
+    .certificate-display {
+        width: 100%; /* Lebar penuh pada perangkat kecil */
+    }
+
+    .certificate-section {
+        flex-direction: column; /* Ubah tata letak menjadi kolom pada perangkat kecil */
+        align-items: center; /* Pusatkan konten */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .close {
+        font-size: 30px; /* Ukuran font lebih kecil pada perangkat sangat kecil */
+    }
+
+    .modal-content {
+        max-width: 95%; /* Lebar maksimum gambar lebih kecil pada perangkat sangat kecil */
+    }
 }
