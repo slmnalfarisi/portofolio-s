@@ -7,11 +7,9 @@
 }
 
 .certificate-list {
-    width: 30%;
-    /* Lebar container teks */
+    width: 30%; /* Lebar container teks */
     max-height: 600px;
-    overflow-y: auto;
-    /* Scroll jika diperlukan */
+    overflow-y: auto; /* Scroll jika diperlukan */
     margin-right: 20px;
 }
 
@@ -26,28 +24,27 @@
 }
 
 .certificate-item:hover {
-    background-color: var(--first-color);
-    /* Warna saat hover */
+    background-color: var(--first-color); /* Warna saat hover */
 }
 
 .certificate-item.active {
-    background-color: var(--container-color);
+    background-color: var(--container-color); 
     color: var(--name-color);
     font-weight: bold;
 }
 
 .certificate-display {
-    width: 60%;
-    /* Lebar container gambar */
+    width: 60%; /* Lebar container gambar */
+    max-width: 500px; /* Maksimum lebar gambar */
 }
 
 .certificate-display img {
-    width: 100%;
-    /* Menyesuaikan lebar gambar dengan container */
-    height: auto;
-    /* Mempertahankan rasio gambar */
+    width: 100%; /* Menyesuaikan lebar gambar dengan container */
+    height: auto; /* Mempertahankan rasio gambar */
     border-radius: 5px;
+    object-fit: contain; /* Menjaga rasio aspek gambar */
 }
+
 
 .category-selector {
     display: flex;
