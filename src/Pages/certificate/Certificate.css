@@ -4,13 +4,13 @@
     justify-content: center;
     padding: 20px;
     color: white;
-    flex-wrap: wrap; /* Membuat elemen berpindah ke baris baru jika ruang tidak cukup */
+    flex-wrap: wrap;
 }
 
 .certificate-list {
-    width: 30%; /* Lebar container teks */
+    width: 30%;
     max-height: 600px;
-    overflow-y: auto; /* Scroll jika diperlukan */
+    overflow-y: auto;
     margin-right: 20px;
 }
 
@@ -25,25 +25,41 @@
 }
 
 .certificate-item:hover {
-    background-color: var(--first-color); /* Warna saat hover */
-}
-
-.certificate-item.active {
-    background-color: var(--container-color); 
-    color: var(--name-color);
-    font-weight: bold;
+    background-color: var(--first-color);
 }
 
 .certificate-display {
-    width: 60%; /* Lebar container gambar */
-    max-width: 500px; /* Maksimum lebar gambar */
+    width: 60%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
 }
 
 .certificate-display img {
-    width: 100%; /* Menyesuaikan lebar gambar dengan container */
-    height: auto; /* Mempertahankan rasio gambar */
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    object-fit: contain; /* Menjaga rasio aspek gambar */
+    transition: transform 0.3s ease;
+}
+
+.zoom-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgb(243, 5, 5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.certificate-display:hover .zoom-icon {
+    opacity: 1;
+}
+
+/* Efek kaca pembesar */
+.certificate-display:hover img {
+    transform: scale(1.05);
 }
 
 .category-selector {
@@ -65,7 +81,6 @@
 
 .category-selector button:hover {
     background-color: var(--first-color);
-    /* Warna saat hover */
 }
 
 .category-selector button.active {
@@ -82,14 +97,14 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap */
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    max-width: 90%; /* Menjaga lebar maksimum gambar */
-    max-height: 90%; /* Menjaga tinggi maksimum gambar */
+    max-width: 90%;
+    max-height: 90%;
     border-radius: 5px;
 }
 
@@ -103,31 +118,29 @@
     cursor: pointer;
 }
 
-/* Media Queries untuk Responsivitas */
 @media (max-width: 768px) {
     .certificate-list {
-        width: 100%; /* Lebar penuh pada perangkat kecil */
-        margin-right: 0; /* Hilangkan margin pada perangkat kecil */
-        margin-bottom: 20px; /* Tambahkan margin bawah */
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .certificate-display {
-        width: 100%; /* Lebar penuh pada perangkat kecil */
+        width: 100%;
     }
 
     .certificate-section {
-        flex-direction: column; /* Ubah tata letak menjadi kolom pada perangkat kecil */
-        align-items: center; /* Pusatkan konten */
+        flex-direction: column;
+        align-items: center;
     }
-
 }
 
 @media (max-width: 480px) {
     .close {
-        font-size: 30px; /* Ukuran font lebih kecil pada perangkat sangat kecil */
+        font-size: 30px;
     }
 
     .modal-content {
-        max-width: 95%; /* Lebar maksimum gambar lebih kecil pada perangkat sangat kecil */
+        max-width: 95%;
     }
 }
