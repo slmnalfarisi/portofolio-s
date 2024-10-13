@@ -29,11 +29,19 @@ export const academicCertificates = [
 
 export const courseCertificates = [
     {
-        title: "Cloud Computing Club Competition - Regional DKI Jakarta",
-        img: "/project/enheal.png",
+        title: "Web Design Fundamentals - Transforming Lines Of Code Intro Digital Excellence",
+        img: "/certificate/bootcamp/kampus.jpg",
     },
     {
-        title: "IT Software Solution for Business - LKS Tingkat Wilayah 1 Jakarta Timur 2022",
-        img: "https://via.placeholder.com/500x600?text=Certificate+4",
+        title: "Kickstart Fullstack Web Development Journey",
+        img: "/certificate/bootcamp/rakamin.jpg",
+    },
+    {
+        title: "Basic And Benefits Of Penetration Testing",
+        img: "/certificate/bootcamp/cysec.jpg",
+    },
+    {
+        title: "Vulnerability Assessment Lifecycle",
+        img: "/certificate/bootcamp/idn.jpg",
     },
 ];
