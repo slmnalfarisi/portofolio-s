@@ -88,6 +88,15 @@
     font-weight: bold;
 }
 
+.certificate-item.active {
+    background-color: transparent;
+    border-color: var(--first-color); 
+    color: var(--first-color);
+    font-weight: bold; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 .modal {
     display: flex;
     position: fixed;

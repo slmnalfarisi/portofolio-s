@@ -2,12 +2,28 @@
 
 export const academicCertificates = [
     {
-        title: "IT Software Solution for Business - LKS Tingkat Kota Jakarta Timur 2023",
-        img: "/project/artem.png",
+        title: "Club Computing Club Competition - Regional DKI Jakarta (Juara 2)",
+        img: "/certificate/c4/juara.jpg",
     },
     {
-        title: "Web Development Technifest",
-        img: "https://via.placeholder.com/500x600?text=Certificate+3",
+        title: "Club Computing Club Competition - Regional DKI Jakarta (Best Design)",
+        img: "/certificate/c4/best.jpg",
+    },
+    {
+        title: "Kompetisi Siswa (LKS) SMK Tingkat Kota Wilayah JT1 (Juara Harapan III)",
+        img: "/certificate/lks/lks.jpg",
+    },
+    {
+        title: "Kompetisi Web Design 8 Technology Festival 2024 (Juara 2)",
+        img: "/certificate/t8no/t8no.jpg",
+    },
+    {
+        title: "Olimpiade Sains Pelajar Nasional Matematika SMA (Medali Emas)",
+        img: "/certificate/ospn/ospn.jpg",
+    },
+    {
+        title: "Indonesian Science Competition Zeta Matematika SMA (Medali Emas)",
+        img: "/certificate/iscz/iscz.jpeg",
     },
 ];
 
