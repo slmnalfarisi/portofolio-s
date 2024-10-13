@@ -51,8 +51,8 @@ const Qualification = () => {
         {index % 2 === 0 ? (
           <>
             <div>
-              <h3 className="qualification_title">{t(item.title.en)}</h3>
-              <span className="qualification_subtitle">{t(item.subtitle.en)}</span>
+              <h3 className="qualification_title">{t(item.title)}</h3>
+              <span className="qualification_subtitle">{t(item.subtitle)}</span>
               <div className="qualification_calendar">
                 <i className="uil uil-calendar-alt"></i>
                 {item.calendar}
@@ -72,8 +72,8 @@ const Qualification = () => {
               {index !== data.length - 1 && <span className="qualification_line"></span>}
             </div>
             <div>
-              <h3 className="qualification_title">{t(item.title.en)}</h3>
-              <span className="qualification_subtitle">{t(item.subtitle.en)}</span>
+              <h3 className="qualification_title">{t(item.title)}</h3>
+              <span className="qualification_subtitle">{t(item.subtitle)}</span>
               <div className="qualification_calendar">
                 <i className="uil uil-calendar-alt"></i>
                 {item.calendar}
@@ -88,7 +88,7 @@ const Qualification = () => {
   return (
     <section className="qualification section" id="experience">
       <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1400">
-        | {t("Pengalaman")} |
+        | {t("experience")} |
       </h2>
 
       <div
@@ -104,7 +104,7 @@ const Qualification = () => {
             onClick={() => handleTabClick("#education")}
           >
             <i className="uil uil-graduation-cap qualification_icon"></i>
-            {t("Pendidikan")}
+            {t("education")}
           </div>
           <div
             className={`qualification_button button--flex ${
@@ -113,7 +113,7 @@ const Qualification = () => {
             onClick={() => handleTabClick("#work")}
           >
             <i className="uil uil-trophy qualification_icon"></i>
-            {t("Kompetisi")}
+            {t("work")}
           </div>
         </div>
 
