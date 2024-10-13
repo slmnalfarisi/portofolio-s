@@ -32,7 +32,6 @@ const resources = {
       "Download CV": "Download CV",
 
       // QUALIFICATIONS
-      Pengalaman: "Experience",
       Pendidikan: "Education",
       Kompetisi: "Competitions",
       "Sekolah Dasar": "Elementary School",
@@ -63,7 +62,7 @@ const resources = {
       second_place_best_design: "2nd Place & Best Design",
       lks_cyber_security:
         "Student Competency Competition (LKS) ~ Cyber Security",
-      third_place: "6th Place",
+      third_place: "3rd Place",
       t8nofest_web_design: "T8NOFEST - Web Design",
       second_place: "2nd Place",
       gss_competition: "GSS Micro Influencer Competitions - Web Design",
@@ -175,7 +174,7 @@ const resources = {
       t8nofest_web_design: "T8NOFEST ~ Web Design",
       second_place: "Juara 2",
       gss_competition: "Kompetisi GSS Micro Influencer ~ Web Design",
-      fourth_place: "Juara 4 & Best Desain",
+      fourth_place: "Juara 4, Best Desain",
 
       // PROJECT
       Rebellum: "Rebellum",
