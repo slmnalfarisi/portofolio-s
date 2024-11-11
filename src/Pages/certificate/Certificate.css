@@ -14,6 +14,38 @@
     margin-right: 20px;
 }
 
+.certificate-list {
+    max-height: 390px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Gaya scrollbar untuk tampilan lebih profesional */
+.certificate-list::-webkit-scrollbar {
+    width: 8px;
+    /* Lebar scrollbar */
+}
+
+.certificate-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Warna latar belakang scrollbar */
+    border-radius: 10px;
+}
+
+.certificate-list::-webkit-scrollbar-thumb {
+    background-color: var(--first-color);
+    /* Warna bagian yang dapat di-scroll */
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+    /* Margin agar terlihat rapi */
+}
+
+.certificate-list::-webkit-scrollbar-thumb:hover {
+    background-color: var(--first-color-alt);
+    /* Warna saat hover */
+}
+
+
 .certificate-item {
     padding: 15px;
     background-color: var(--first-color-alt);
@@ -90,9 +122,9 @@
 
 .certificate-item.active {
     background-color: transparent;
-    border-color: var(--first-color); 
+    border-color: var(--first-color);
     color: var(--first-color);
-    font-weight: bold; 
+    font-weight: bold;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -126,8 +158,12 @@
     font-weight: bold;
     cursor: pointer;
 }
-
 @media (max-width: 768px) {
+    .certificate-section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
     .certificate-list {
         width: 100%;
         margin-right: 0;
@@ -136,11 +172,7 @@
 
     .certificate-display {
         width: 100%;
-    }
-
-    .certificate-section {
-        flex-direction: column;
-        align-items: center;
+        margin-bottom: 20px;
     }
 }
 

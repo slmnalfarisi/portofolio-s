@@ -10,16 +10,24 @@ export const academicCertificates = [
         img: "/certificate/akademik/c4best.jpg",
     },
     {
-        title: "Kompetisi Siswa (LKS) SMK Tingkat Kota Wilayah JT1 (Juara Harapan III)",
+        title: "Siswa (LKS) SMK Tingkat Kota Wilayah JT1 (Juara Harapan III)",
         img: "/certificate/akademik/lks.jpg",
     },
     {
-        title: "Kompetisi Web Design 8 Technology Festival 2024 (Juara 2)",
+        title: "Micro Influencer Competition Gerakan Sekolah Sehat (Juara Harapan I)",
+        img: "/certificate/akademik/gss.jpg",
+    },
+    {
+        title: "Web Design 8 Technology Festival 2024 (Juara 2)",
         img: "/certificate/akademik/t8no.jpg",
     },
     {
         title: "De Code Web Design Competition 2024 (Peserta)",
         img: "/certificate/akademik/decode.png",
+    },
+    {
+        title: "Intermedia Information Technology (IITC) X Rumah Web (Nominasi Juara)",
+        img: "/certificate/akademik/iitc.jpg",
     },
     {
         title: "Olimpiade Sains Pelajar Nasional Matematika SMA (Medali Emas)",

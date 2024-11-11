@@ -39,13 +39,13 @@ const Certificate = () => {
           onClick={() => setSelectedType("academic")}
           className={selectedType === "academic" ? "active" : ""}
         >
-          Sertifikat Akademik
+          Sertifikat Prestasi
         </button>
         <button
           onClick={() => setSelectedType("course")}
           className={selectedType === "course" ? "active" : ""}
         >
-          Sertifikat Kursus
+          Sertifikat Keterampilan
         </button>
       </div>
 
