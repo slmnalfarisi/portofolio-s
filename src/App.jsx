@@ -35,9 +35,9 @@ function App() {
       <main className="main">
         <Home />
         <About />
-        <Certificate/>
         <Skills />
         <Qualification />
+        <Certificate/>
         <Project />
         <Contact />
       </main>

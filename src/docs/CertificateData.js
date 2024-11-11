@@ -3,28 +3,29 @@
 export const academicCertificates = [
     {
         title: "Club Computing Club Competition - Regional DKI Jakarta (Juara 2)",
-        img: "/certificate/c4/juara.jpg",
+        img: "/certificate/akademik/c4juara.jpg",
     },
     {
         title: "Club Computing Club Competition - Regional DKI Jakarta (Best Design)",
-        img: "/certificate/c4/best.jpg",
+        img: "/certificate/akademik/c4best.jpg",
     },
     {
         title: "Kompetisi Siswa (LKS) SMK Tingkat Kota Wilayah JT1 (Juara Harapan III)",
-        img: "/certificate/lks/lks.jpg",
+        img: "/certificate/akademik/lks.jpg",
     },
     {
         title: "Kompetisi Web Design 8 Technology Festival 2024 (Juara 2)",
-        img: "/certificate/t8no/t8no.jpg",
+        img: "/certificate/akademik/t8no.jpg",
+    },
+    {
+        title: "De Code Web Design Competition 2024 (Peserta)",
+        img: "/certificate/akademik/decode.png",
     },
     {
         title: "Olimpiade Sains Pelajar Nasional Matematika SMA (Medali Emas)",
-        img: "/certificate/ospn/ospn.jpg",
+        img: "/certificate/akademik/ospn.jpg",
     },
-    {
-        title: "Indonesian Science Competition Zeta Matematika SMA (Medali Emas)",
-        img: "/certificate/iscz/iscz.jpeg",
-    },
+    
 ];
 
 export const courseCertificates = [
