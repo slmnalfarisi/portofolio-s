@@ -108,12 +108,12 @@ const Qualification = () => {
           </div>
           <div
             className={`qualification_button button--flex ${
-              activeTab === "#work" ? "qualification_active" : ""
+              activeTab === "#competition" ? "qualification_active" : ""
             }`}
-            onClick={() => handleTabClick("#work")}
+            onClick={() => handleTabClick("#competition")}
           >
             <i className="uil uil-trophy qualification_icon"></i>
-            {t("work")}
+            {t("competition")}
           </div>
         </div>
 
@@ -122,8 +122,8 @@ const Qualification = () => {
             {renderQualificationData(qualificationData.education)}
           </div>
 
-          <div className="qualification_content" id="work">
-            {renderQualificationData(qualificationData.work)}
+          <div className="qualification_content" id="competition">
+            {renderQualificationData(qualificationData.competition)}
           </div>
         </div>
       </div>

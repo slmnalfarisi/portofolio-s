@@ -83,7 +83,7 @@ const resources = {
       // QUALIFICATION
       experience: "Experience",
       education: "Education",
-      work: "Work",
+      competition: "Competition",
       elementary_school: "Elementary School",
       elementary_school_subtitle: "SDN 02 SUMBERJAYA",
       junior_high_school: "Junior High School",
@@ -192,7 +192,7 @@ const resources = {
       // QUALIFICATIONS
       experience: "Pengalaman",
       education: "Pendidikan",
-      work: "Kompetisi",
+      competition: "Kompetisi",
       elementary_school: "Sekolah Dasar",
       elementary_school_subtitle: "SDN 02 SUMBERJAYA",
       junior_high_school: "Sekolah Menengah Pertama",

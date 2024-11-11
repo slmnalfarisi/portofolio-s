@@ -16,7 +16,7 @@ export const qualificationData = {
       calendar: "2022-2025"
     },
   ],
-  work: [
+  competition: [
     {
       title: "cloud_competition",
       subtitle: "participant",
