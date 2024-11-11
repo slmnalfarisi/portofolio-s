@@ -1,3 +1,7 @@
+.certificates{
+    padding-top: 100px;
+}
+
 .certificate-section {
     display: flex;
     align-items: flex-start;

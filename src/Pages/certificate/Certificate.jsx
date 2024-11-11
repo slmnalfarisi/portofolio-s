@@ -28,7 +28,7 @@ const Certificate = () => {
 
   return (
     <section>
-      <h2 className="section_title" data-aos="zoom-in" data-aos-duration="1300">
+      <h2 className="section_title certificates" data-aos="zoom-in" data-aos-duration="1300">
         | {t('SERTIFIKAT')} |
       </h2>
 
