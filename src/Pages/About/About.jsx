@@ -32,7 +32,7 @@ const About = () => {
           <div className="about_buttons">
             <a
               download=""
-              href="/pdf/CV.pdf"
+              href="/pdf/CV2.pdf"
               className="about_button button button--flex"
               data-aos="fade-up"
               data-aos-duration="900"

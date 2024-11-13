@@ -23,7 +23,8 @@ export const Header = () => {
     };
   }, []);
 
-  const changeLanguage = (lng) => {
+  const changeLanguage = (lng, e) => {
+    e.preventDefault(); // Prevent the page from scrolling to the top
     i18n.changeLanguage(lng);
     setLanguageOpen(false); // Close dropdown after selection
   };
@@ -82,8 +83,8 @@ export const Header = () => {
               </button>
               {isLanguageOpen && (
                 <div className="dropdown-content">
-                  <a href="#" onClick={() => changeLanguage('id')}>{t('ID')}</a>
-                  <a href="#" onClick={() => changeLanguage('en')}>{t('EN')}</a>
+                  <a href="#" onClick={(e) => changeLanguage('id', e)}>{t('ID')}</a>
+                  <a href="#" onClick={(e) => changeLanguage('en', e)}>{t('EN')}</a>
                 </div>
               )}
             </div>
