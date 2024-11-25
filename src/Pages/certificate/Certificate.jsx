@@ -34,18 +34,18 @@ const Certificate = () => {
 
       {/* Pilihan Tipe Sertifikat */}
       <div className="category-selector">
-        <button
+        {/* <button
           onClick={() => setSelectedType("academic")}
           className={selectedType === "academic" ? "active" : ""}
         >
           {t('Sertifikat Prestasi')}
-        </button>
-        <button
+        </button> */}
+        {/* <button
           onClick={() => setSelectedType("course")}
           className={selectedType === "course" ? "active" : ""}
         >
-          {t('Sertifikat Keterampilan')}
-        </button>
+          {t('')}
+        </button> */}
       </div>
 
       <div className="certificate-section">

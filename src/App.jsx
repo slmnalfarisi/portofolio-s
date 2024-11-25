@@ -9,10 +9,10 @@ import Qualification from './Pages/Qualification/Qualification';
 import Project from './Pages/Project/Project';
 import Contact from './Pages/Contact/Contact';
 
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import ScrollActive from './components/Models/ScrollActive/ScrollActive';
-import ScrollUp from './components/Models/ScrollUp/ScrollUp';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import ScrollActive from './Components/Models/ScrollActive/ScrollActive';
+import ScrollUp from './Components/Models/ScrollUp/ScrollUp';
 import Certificate from './Pages/certificate/Certificate';
 
 Aos.init({

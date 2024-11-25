@@ -81,7 +81,7 @@ const Project = () => {
               {!project.tools.includes("WordPress") && (
                 <a href={project.sourceLink}>
                   <div className="portofolio_button button">
-                    {t("Source Code")}{" "}
+                    {t("")}{" "}
                     <i className="uil uil-arrow-right portfolio_icon"></i>
                   </div>
                 </a>

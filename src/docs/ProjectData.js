@@ -11,7 +11,6 @@ const projectData = [
       id: "Rebellum adalah sebuah website yang memberikan informasi serta solusi terkait kenakalan remaja di Indonesia"
     },
     demoLink: "https://rebellum.vercel.app/",
-    sourceLink: "https://github.com/reynaldo0/rebellum-v2"
   },
   {
     title: {
@@ -25,7 +24,6 @@ const projectData = [
       id: "Healthyself adalah sebuah website yang memberikan informasi terkait kesehatan manusia dari Bayi hingga Lansia"
     },
     demoLink: "https://healthyself.vercel.app/",
-    sourceLink: "https://github.com/reynaldo0/HealThyself"
   },
   {
     title: {
@@ -39,21 +37,6 @@ const projectData = [
       id: "Artem adalah sebuah website yang memberikan informasi terkait karya seniman ternama."
     },
     demoLink: "https://artems.vercel.app/",
-    sourceLink: "https://github.com/reynaldo0/artems"
-  },
-  {
-    title: {
-      en: "VEREV Shops",
-      id: "VEREV Shops"
-    },
-    image: "/project/verev.png",
-    tools: ["Tailwind", "Django", "JavaScript"],
-    description: {
-      en: "VEREV Shops is a cash register website that can interact directly with users.",
-      id: "VEREV Shops adalah sebuah website Kasir yang dapat berintraksi langsung dengan pengguna"
-    },
-    demoLink: "",
-    sourceLink: "https://github.com/reynaldo0/verevshops"
   },
   {
     title: {
@@ -67,7 +50,6 @@ const projectData = [
       id: "Enheal Sycology adalah sebuah website yang memberikan edukasi terkait kesehatan mental"
     },
     demoLink: "",
-    sourceLink: "https://github.com/reynaldo0/enheal-sycology"
   },
   {
     title: {
@@ -84,20 +66,6 @@ const projectData = [
   },
   {
     title: {
-      en: "Wafari",
-      id: "Wafari"
-    },
-    image: "/project/wafarii.webp",
-    tools: ["HTML", "CSS", "JavaScript"],
-    description: {
-      en: "Wafari is a website that provides information about tourism in DKI Jakarta.",
-      id: "Wafari adalah sebuah website yang memberikan informasi terkait wisata yang ada di DKI Jakarta"
-    },
-    demoLink: "https://wafariforensix.vercel.app/",
-    sourceLink: "https://github.com/reynaldo0/wafariforensix"
-  },
-  {
-    title: {
       en: "Fotix Cinema",
       id: "Fotix Cinema"
     },
@@ -108,7 +76,6 @@ const projectData = [
       id: "Fotix Cinema adalah website yang menampilkan daftar daftar film menarik untuk para remaja"
     },
     demoLink: "https://fotixcinema.vercel.app/",
-    sourceLink: "https://github.com/reynaldo0/fotixcinema"
   }
 ];
 

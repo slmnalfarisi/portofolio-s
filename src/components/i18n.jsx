@@ -15,20 +15,20 @@ const resources = {
 
       // HOME
       "Hallo, Nama saya": "Hello, My Name",
-      "Reynaldo Yusellino": "Reynaldo Yusellino",
+      "Muhammad Salman Al Farisi": "Muhammad Salman Al Farisi",
       Programmer: "Programmer",
       "Web Developer": "Web Developer",
       "Cyber Security Enthusiast": "Front End Developer",
       "Game Developer": "Wordpress Developer",
       "Fullstack Developer": "Student",
-      "Saya merupakan seseorang yang suka mempelajari bahasa Pemrograman khususnya untuk pengembangan website, dan game. Selain itu saya juga antusias terhadap keamanan siber terhadap website.":
-        "I am someone who enjoys learning programming languages, especially for web and game development. I am also passionate about cybersecurity for websites.",
+      "Saya antusias mempelajari bahasa pemrograman, khususnya pengembangan website dan game, serta memiliki minat mendalam pada keamanan siber untuk aplikasi web.":
+        "I am passionate about learning programming languages, particularly in website and game development, and deeply interested in cybersecurity for web applications.",
       "Hubungi Saya": "Contact Me",
 
       // ABOUT
       "Tentang Saya": "About Me",
-      "Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya selalu berusaha untuk belajar sehingga dapat mengetahui bahkan memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari bahasa pemrograman yang baru. Baik dalam pengembangan suatu website maupun suatu game 2D.":
-        "I am a student from SMKN 46 Jakarta who initially entered the IT world without a computer background, but I always strive to learn so that I can understand the flow of programming. Currently, I enjoy learning new programming languages, both in website development and 2D game development.",
+      "Saya adalah siswa SMKN 46 Jakarta yang dikenal memiliki semangat belajar tinggi dan rasa ingin tahu yang mendalam terhadap dunia teknologi. Saya sangat antusias dalam mengeksplorasi berbagai aspek pemrograman, mulai dari pengembangan website, aplikasi, hingga game. Dengan tekad untuk terus berkembang, saya berkomitmen untuk selalu mengikuti tren dan inovasi terbaru di bidang teknologi, sehingga dapat berkontribusi secara maksimal di masa depan.":
+        "I am a student at SMKN 46 Jakarta, known for my strong passion for learning and deep curiosity about the world of technology. I am highly enthusiastic about exploring various aspects of programming, including website development, applications, and games. With a determination to grow, I am committed to staying updated on the latest trends and innovations in technology, aiming to contribute meaningfully in the future.",
       "Download CV": "Download CV",
 
       // QUALIFICATIONS
@@ -55,21 +55,21 @@ const resources = {
       "Sertifikat Keterampilan": "Course Certificates",
       "Certificate Image": "Certificate Image",
       "Zoomed Project": "Zoomed Project",
-      "Club Computing Club Competition - Regional DKI Jakarta (Juara 2)":
-        "Club Computing Club Competition - Regional DKI Jakarta (2nd Place)",
-      "Club Computing Club Competition - Regional DKI Jakarta (Best Design)":
-        "Club Computing Club Competition - Regional DKI Jakarta (Best Design)",
-      "Siswa (LKS) SMK Tingkat Kota Wilayah JT1 (Juara Harapan III)":
+      "Juara 1 - IITC Web Design 2024 (Nasional)":
+        "1st Place - IITC Web Design 2024 (National)",
+      "Juara 1 - Best Design C4 AWS 2024 (Provinsi DKI Jakarta)":
+        "1st Place - Best Design C4 AWS 2024 (DKI Jakarta Province)",
+      "Juara 2 - Cloud Computing Club Kompetisi C4 2024 (Provinsi DKI Jakarta)":
         "Siswa (LKS) SMK City Level JT1 (3rd Runner-up)",
-      "Micro Influencer Competition Gerakan Sekolah Sehat (Juara Harapan I)":
+      "Juara 1 - Desain Web GSS Micro Influencer AWS 2024 (Nasional)":
         "Micro Influencer Competition Gerakan Sekolah Sehat (1st Runner-up)",
-      "Web Design 8 Technology Festival 2024 (Juara 2)":
+      "Juara 2 - Cloud Computing Club Kompetisi C4 2024 (Provinsi DKI Jakarta)":
         "Web Design 8 Technology Festival 2024 (2nd Place)",
-      "De Code Web Design Competition 2024 (Peserta)":
+      "Juara 2 - Trelogy Web Design 2024 (Nasional)":
         "De Code Web Design Competition 2024 (Participant)",
-      "Intermedia Information Technology (IITC) X Rumah Web (Nominasi Juara)":
+      "Juara 4 - LKS Cloud Computing 2024 (Provinsi DKI Jakarta)":
         "Intermedia Information Technology (IITC) X Rumah Web (Nominee)",
-      "Olimpiade Sains Pelajar Nasional Matematika SMA (Medali Emas)":
+      "Penerima Award Sharing The Dream SGC 2024":
         "Olimpiade Sains Pelajar Nasional Mathematics High School (Gold Medal)",
       "Web Design Fundamentals - Transforming Lines Of Code Intro Digital Excellence":
         "Web Design Fundamentals - Transforming Lines Of Code Intro Digital Excellence",
@@ -85,9 +85,9 @@ const resources = {
       education: "Education",
       competition: "Competition",
       elementary_school: "Elementary School",
-      elementary_school_subtitle: "SDN 02 SUMBERJAYA",
+      elementary_school_subtitle: "SDN 01 CIPINANG CEMPEDAK",
       junior_high_school: "Junior High School",
-      junior_high_school_subtitle: "SMPN 11 TAMBUN SELATAN",
+      junior_high_school_subtitle: "SMPN 62 JAKARTA",
       vocational_high_school: "Vocational High School",
       vocational_high_school_subtitle: "SMKN 46 JAKARTA",
       cloud_competition: "Cloud Computing Club Competition ~ Website Design",
@@ -125,7 +125,7 @@ const resources = {
       "Coba Lagi": "Try Again",
 
       // FOOTER
-      Reynaldo: "Reynaldo",
+      Salman: "Salman",
       "All Rights Reserved": "All Rights Reserved",
     },
   },
@@ -142,20 +142,20 @@ const resources = {
 
       // HOME
       "Hallo, Nama saya": "Hallo, Nama saya",
-      "Reynaldo Yusellino": "Reynaldo Yusellino",
+      "Muhammad Salman Al Farisi": "Muhammad Salman Al Farisi",
       Programmer: "Programmer",
       "Web Developer": "Web Developer",
       "Cyber Security Enthusiast": "Front End Developer",
       "Game Developer": "Wordpress Developer",
       "Fullstack Developer": "Siswa",
-      "Saya merupakan seseorang yang suka mempelajari bahasa Pemrograman khususnya untuk pengembangan website, dan game. Selain itu saya juga antusias terhadap keamanan siber terhadap website.":
-        "Saya merupakan seseorang yang suka mempelajari bahasa Pemrograman khususnya untuk pengembangan website, dan game. Selain itu saya juga antusias terhadap keamanan siber terhadap website.",
+      "Saya antusias mempelajari bahasa pemrograman, khususnya pengembangan website dan game, serta memiliki minat mendalam pada keamanan siber untuk aplikasi web.":
+        "Saya antusias mempelajari bahasa pemrograman, khususnya pengembangan website dan game, serta memiliki minat mendalam pada keamanan siber untuk aplikasi web.",
       "Hubungi Saya": "Hubungi Saya",
 
       // ABOUT
       "Tentang Saya": "Tentang Saya",
-      "Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya selalu berusaha untuk belajar sehingga dapat mengetahui bahkan memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari bahasa pemrograman yang baru. Baik dalam pengembangan suatu website maupun suatu game 2D.":
-        "Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya selalu berusaha untuk belajar sehingga dapat mengetahui bahkan memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari bahasa pemrograman yang baru. Baik dalam pengembangan suatu website maupun suatu game 2D.",
+      "Saya adalah siswa SMKN 46 Jakarta yang dikenal memiliki semangat belajar tinggi dan rasa ingin tahu yang mendalam terhadap dunia teknologi. Saya sangat antusias dalam mengeksplorasi berbagai aspek pemrograman, mulai dari pengembangan website, aplikasi, hingga game. Dengan tekad untuk terus berkembang, saya berkomitmen untuk selalu mengikuti tren dan inovasi terbaru di bidang teknologi, sehingga dapat berkontribusi secara maksimal di masa depan.":
+        "Saya adalah siswa SMKN 46 Jakarta yang dikenal memiliki semangat belajar tinggi dan rasa ingin tahu yang mendalam terhadap dunia teknologi. Saya sangat antusias dalam mengeksplorasi berbagai aspek pemrograman, mulai dari pengembangan website, aplikasi, hingga game. Dengan tekad untuk terus berkembang, saya berkomitmen untuk selalu mengikuti tren dan inovasi terbaru di bidang teknologi, sehingga dapat berkontribusi secara maksimal di masa depan.",
       "Download CV": "Download CV",
 
       // QUALIFICATIONS
@@ -163,23 +163,23 @@ const resources = {
       education: "Pendidikan",
       competition: "Kompetisi",
       elementary_school: "Sekolah Dasar",
-      elementary_school_subtitle: "SDN 02 SUMBERJAYA",
+      elementary_school_subtitle: "SDN 01 CIPINANG CEMPEDAK",
       junior_high_school: "Sekolah Menengah Pertama",
-      junior_high_school_subtitle: "SMPN 11 TAMBUN SELATAN",
+      junior_high_school_subtitle: "SMPN 62 JAKARTA",
       vocational_high_school: "Sekolah Menengah Kejuruan",
       vocational_high_school_subtitle: "SMKN 46 JAKARTA",
-      cloud_competition: "Cloud Computing Club Competition ~ Web Design",
-      participant: "Peserta",
-      jakbee_competition: "Kompetisi JakBee ~ Short Movie",
-      grand_finalist: "Grand Finalis",
-      cloud_competition_2: "Cloud Computing Club Competition ~ Web Design",
-      second_place_best_design: "Juara 2 & Best Desain",
-      lks_cyber_security: "Lomba Kompetensi Siswa (LKS) ~ Keamanan Siber",
-      third_place: "Juara Harapan III",
+      cloud_competition: "Cloud Computing Club Competition AWS  ~ Web Design",
+      participant: "JUARA 1 - NASIONAL",
+      jakbee_competition: " IITC ~ Web Design",
+      grand_finalist: "Juara 1 ~ NASIONAL",
+      cloud_competition_2: "GSS Micro Influencer AWS ~ Web Design",
+      second_place_best_design: "Juara 1 ~ NASIONAL",
+      lks_cyber_security: "Lomba Kompetensi Siswa (LKS) ~ Cloud Computing",
+      third_place: "Juara Harapan I ~ Provinsi",
       t8nofest_web_design: "T8NOFEST ~ Web Design",
-      second_place: "Juara 2",
-      gss_competition: "Kompetisi GSS Micro Influencer ~ Web Design",
-      fourth_place: "Juara 4, Best Desain",
+      second_place: "Juara 2 ~ Nasional",
+      gss_competition: "Penerima Scholarship Sharing The Dream SCG",
+      fourth_place: "Penerima ~ Nasional",
 
       // SERTIFIKAT
       SERTIFIKAT: "Sertifikat",
@@ -192,22 +192,22 @@ const resources = {
       "Sertifikat Keterampilan": "Sertifikat Keterampilan",
       "Certificate Image": "Gambar Sertifikat",
       "Zoomed Project": "Proyek Diperbesar",
-      "Club Computing Club Competition - Regional DKI Jakarta (Juara 2)":
-        "Kompetisi Klub Komputer - Regional DKI Jakarta (Juara 2)",
-      "Club Computing Club Competition - Regional DKI Jakarta (Best Design)":
-        "Kompetisi Klub Komputer - Regional DKI Jakarta (Desain Terbaik)",
-      "Siswa (LKS) SMK Tingkat Kota Wilayah JT1 (Juara Harapan III)":
-        "Siswa (LKS) SMK Tingkat Kota Wilayah JT1 (Juara Harapan III)",
-      "Micro Influencer Competition Gerakan Sekolah Sehat (Juara Harapan I)":
-        "Kompetisi Micro Influencer Gerakan Sekolah Sehat (Juara Harapan I)",
-      "Web Design 8 Technology Festival 2024 (Juara 2)":
-        "Festival Teknologi Web Design 8 2024 (Juara 2)",
-      "De Code Web Design Competition 2024 (Peserta)":
-        "Kompetisi Web Design De Code 2024 (Peserta)",
-      "Intermedia Information Technology (IITC) X Rumah Web (Nominasi Juara)":
-        "Teknologi Informasi Intermedia (IITC) X Rumah Web (Nominasi Juara)",
-      "Olimpiade Sains Pelajar Nasional Matematika SMA (Medali Emas)":
-        "Olimpiade Sains Pelajar Nasional Matematika SMA (Medali Emas)",
+      "1st Place - IITC Web Design 2024 (National)":
+        "Juara 1 - IITC Web Design 2024 (Nasional)",
+      "1st Place - Best Design C4 AWS 2024 (DKI Jakarta Province)":
+        "Juara 1 - Best Design C4 AWS 2024 (Provinsi DKI Jakarta)",
+      "1st Place - GSS Micro Influencer Web Design AWS 2024 (National)":
+        "Juara 1 - Desain Web GSS Micro Influencer AWS 2024 (Nasional)",
+      "2nd Place - Technofest by SMAN 8 Jakarta (National)":
+        "Juara 2 - Technofest oleh SMAN 8 Jakarta (Nasional)",
+      "2nd Place - Cloud Computing Club Competition C4 2024 (DKI Jakarta Province)":
+        "Juara 2 - Cloud Computing Club Kompetisi C4 2024 (Provinsi DKI Jakarta)",
+      "2nd Place - Trelogy Web Design 2024 (National)":
+        "Juara 2 - Trelogy Web Design 2024 (Nasional)",
+      "4th Place - LKS Cloud Computing 2024 (National)":
+        "Juara 4 - LKS Cloud Computing 2024 (Provinsi DKI Jakarta)",
+      "Recipient of the Scholarship Sharing The Dream Award SGC 2024":
+        "Penerima Beasiswa Sharing The Dream SCG 2024",
       "Web Design Fundamentals - Transforming Lines Of Code Intro Digital Excellence":
         "Dasar-dasar Desain Web - Transformasi Baris Kode Intro Digital Excellence",
       "Kickstart Fullstack Web Development Journey":

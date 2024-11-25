@@ -2,36 +2,36 @@
 
 export const academicCertificates = [
     {
-        title: "Club Computing Club Competition - Regional DKI Jakarta (Juara 2)",
-        img: "/certificate/akademik/c4juara.jpg",
+        title: "1st Place - IITC Web Design 2024 (National)",
+        img: "/certificate/akademik/iitc1.jpg",
     },
     {
-        title: "Club Computing Club Competition - Regional DKI Jakarta (Best Design)",
-        img: "/certificate/akademik/c4best.jpg",
+        title: "1st Place - Best Design C4 AWS 2024 (DKI Jakarta Province)",
+        img: "/certificate/akademik/Juara 1 - Best Design C4 AWS 2024 (Provinsi DKI Jakarta).jpg",
     },
     {
-        title: "Siswa (LKS) SMK Tingkat Kota Wilayah JT1 (Juara Harapan III)",
-        img: "/certificate/akademik/lks.jpg",
+        title: "2nd Place - Cloud Computing Club Competition C4 2024 (DKI Jakarta Province)",
+        img: "/certificate/akademik/Juara 2 - Cloud Computing Club Kompetisi C4 2024 (Provinsi DKI Jakarta).jpg",
     },
     {
-        title: "Micro Influencer Competition Gerakan Sekolah Sehat (Juara Harapan I)",
-        img: "/certificate/akademik/gss.jpg",
+        title: "1st Place - GSS Micro Influencer Web Design AWS 2024 (National)",
+        img: "/certificate/akademik/Juara 1 - Desain Web GSS Micro Influencer AWS 2024 (Nasional).jpg",
     },
     {
-        title: "Web Design 8 Technology Festival 2024 (Juara 2)",
-        img: "/certificate/akademik/t8no.jpg",
+        title: "2nd Place - Cloud Computing Club Competition C4 2024 (DKI Jakarta Province)",
+        img: "/certificate/akademik/Juara 2 - Cloud Computing Club Kompetisi C4 2024 (Provinsi DKI Jakarta).jpg",
     },
     {
-        title: "De Code Web Design Competition 2024 (Peserta)",
-        img: "/certificate/akademik/decode.png",
+        title: "2nd Place - Trelogy Web Design 2024 (National)",
+        img: "/certificate/akademik/trlogi.png",
     },
     {
-        title: "Intermedia Information Technology (IITC) X Rumah Web (Nominasi Juara)",
-        img: "/certificate/akademik/iitc.jpg",
+        title: "4th Place - LKS Cloud Computing 2024 (National)",
+        img: "/certificate/akademik/kanjoettttt.png",
     },
     {
-        title: "Olimpiade Sains Pelajar Nasional Matematika SMA (Medali Emas)",
-        img: "/certificate/akademik/ospn.jpg",
+        title: "Recipient of the Sharing The Dream Award SGC 2024",
+        img: "/certificate/akademik/WhatsApp Image 2024-11-24 at 09.23.16_8922f45a.jpg",
     },
     
 ];

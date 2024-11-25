@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer_bg">
         <div className="footer_container container grid">
           <div>
-            <h1 className="footer_title">{t('Reynaldo')}</h1>
+            <h1 className="footer_title">{t('Salman')}</h1>
             <span className="footer_subtitle">{t('Programmer')}</span>
           </div>
 
@@ -28,7 +28,7 @@ const Footer = () => {
 
           <div className="footer_socials">
             <a
-              href="https://www.instagram.com/rynldysllino"
+              href="https://www.instagram.com/avlfarizii"
               target="_blank"
               rel="noopener noreferrer"
               className="footer_social"
@@ -37,7 +37,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://github.com/reynaldo0"
+              href="https://github.com/avlfarizi"
               target="_blank"
               rel="noopener noreferrer"
               className="footer_social"
@@ -46,7 +46,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/reynaldo-yusellino-564724270"
+              href="https://www.linkedin.com/in/muhammad-salman-al-farisi-14a517324/"
               target="_blank"
               rel="noopener noreferrer"
               className="footer_social"
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         <p className="footer_copy">
-          &#169; <span className="footname">{t('Reynaldo')}</span>. {t('All Rights Reserved')}
+          &#169; <span className="footname">{t('Salman')}</span>. {t('All Rights Reserved')}
         </p>
       </div>
     </footer>

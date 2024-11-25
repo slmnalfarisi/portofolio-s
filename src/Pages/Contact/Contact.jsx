@@ -53,21 +53,21 @@ const Contact = () => {
             <i className="uil uil-linkedin-alt contact_icon"></i>
             <div>
               <h3 className="contact_title">{t("LinkedIn")}</h3>
-              <span className="contact_subtitle">Reynaldo Yusellino</span>
+              <span className="contact_subtitle">Muhammad Salman Al Farisi</span>
             </div>
           </div>
           <div className="contact_information" data-aos="fade-right" data-aos-duration="1600">
             <i className="uil uil-envelope contact_icon"></i>
             <div>
               <h3 className="contact_title">{t("Email")}</h3>
-              <span className="contact_subtitle">reynaldooyusellino@gmail.com</span>
+              <span className="contact_subtitle">muhammadalfarisi486@gmail.com</span>
             </div>
           </div>
           <div className="contact_information" data-aos="fade-right" data-aos-duration="1700">
             <i className="uil uil-map-marker contact_icon"></i>
             <div>
               <h3 className="contact_title">{t("Lokasi")}</h3>
-              <span className="contact_subtitle">Indonesia, Bekasi</span>
+              <span className="contact_subtitle">Indonesia, Jakarta</span>
             </div>
           </div>
         </div>
