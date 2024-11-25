@@ -40,7 +40,7 @@ export const Header = () => {
     <header className="header" id="header">
       <nav className="nav container">
         <a href="#" className="nav_logo reyname">
-          Reynaldo
+          Portofolio
         </a>
 
         <div className={`nav_menu ${isMenuOpen ? "show-menu" : ""}`} id="nav-menu">

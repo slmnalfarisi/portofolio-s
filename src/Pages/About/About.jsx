@@ -26,13 +26,13 @@ const About = () => {
             data-aos="fade-up"
             data-aos-duration="800"
           >
-            {t("Saya adalah seseorang pelajar dari SMKN 46 Jakarta yang awalnya masuk ke dalam dunia IT tidak memiliki basic Komputer, namun saya selalu berusaha untuk belajar sehingga dapat mengetahui bahkan memahami alur dari suatu pemrograman. Saat ini saya suka mempelajari bahasa pemrograman yang baru. Baik dalam pengembangan suatu website maupun suatu game 2D.")}
+            {t("Saya adalah siswa SMKN 46 Jakarta yang dikenal memiliki semangat belajar tinggi dan rasa ingin tahu yang mendalam terhadap dunia teknologi. Saya sangat antusias dalam mengeksplorasi berbagai aspek pemrograman, mulai dari pengembangan website, aplikasi, hingga game. Dengan tekad untuk terus berkembang, saya berkomitmen untuk selalu mengikuti tren dan inovasi terbaru di bidang teknologi, sehingga dapat berkontribusi secara maksimal di masa depan.")}
           </p>
 
           <div className="about_buttons">
             <a
               download=""
-              href="/pdf/CV2.pdf"
+              href="/pdf/CV_Muhammad Salman AL Farisi.pdf"
               className="about_button button button--flex"
               data-aos="fade-up"
               data-aos-duration="900"
