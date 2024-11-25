@@ -1,6 +1,0 @@
-# robots.txt file for your website
-
-User-agent: *
-Disallow:
-
-Sitemap: http://localhost:5173/
